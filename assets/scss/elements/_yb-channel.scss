@@ -1,0 +1,74 @@
+.yb_channel {
+    overflow: hidden;
+    margin: 100px 0;
+    .followUs {
+        border: 1px solid var(--gray);
+        border-radius: 16px;
+        text-align: center;
+        padding: 40px 16px;
+        .logo {
+            margin-bottom: 20px;
+        }
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+        .primary_btn {
+            background-color: transparent;
+            color: black;
+            border: 1px solid black;
+            &:hover {
+                background-color: rgb(233, 233, 233);
+            }
+        }
+    }
+}
+.yb_channel_slider {
+    overflow: hidden;
+    .video_item {
+        .image {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            .play_btn {
+                padding: 0;
+                position: absolute;
+            }
+            img {
+                border-radius: 16px;
+            }
+        }
+        .details {
+            h3 {
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                display: -webkit-box;
+                overflow: hidden;
+                color: var(--gray-dark);
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .yb_channel{
+        .slider{
+            overflow: visible;
+        }
+        .followUs{
+            padding: 24px 14px;
+            .logo{
+                margin-bottom: 7px;
+                svg{
+                    width: 120px;
+                    height: auto;
+                }
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}

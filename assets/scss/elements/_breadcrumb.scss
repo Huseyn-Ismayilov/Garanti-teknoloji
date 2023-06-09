@@ -1,0 +1,34 @@
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 32px 0 48px;
+    li {
+        &:not(:last-child) {
+            display: flex;
+            align-items: center;
+            &::after {
+                content: "";
+                background-image: url(../images/chevron-right.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: block;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        a {
+            font-weight: 500;
+            font-size: 14px;
+            color: var(--gray-dark);
+        }
+        svg {
+            display: block;
+        }
+    }
+}
+@media (max-width:576px){
+    .breadcrumb{
+        margin: 16px 0 24px;
+    }
+}

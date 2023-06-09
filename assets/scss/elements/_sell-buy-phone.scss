@@ -1,0 +1,90 @@
+.sell_buy_phone {
+    .items {
+        display: flex;
+        gap: 40px;
+        width: 100%;
+        .item {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            padding: 24px 40px;
+            border-radius: 16px;
+            .content {
+                align-self: center;
+                width: 50%;
+                h3 {
+                    font-weight: 600;
+                    font-size: 32px;
+                    margin-bottom: 8px;
+                }
+                p {
+                    font-weight: 500;
+                    font-size: 18px;
+                    margin-bottom: 32px;
+                }
+            }
+            .image {
+                width: 185px;
+                margin-top: -75px;
+            }
+            &.sell {
+                background-color: var(--bg-color);
+                .primary_btn {
+                    background-color: transparent;
+                    color: black;
+                    border: 1px solid black;
+                    &:hover{
+                        background-color: rgb(233, 233, 233);
+                    }
+                }
+            }
+            &.buy {
+                background-color: var(--orange-100);
+                .primary_btn {
+                    &:hover{
+                        background-color: var(--orange-dark-hover);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:991px){
+    .sell_buy_phone{
+        .items {
+            flex-wrap: wrap;
+            .item {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width:768px){
+    .sell_buy_phone{
+        .items {
+            .item {
+                flex-direction: column;
+                padding: 16px;
+                .content{
+                    width: 100%;
+                }
+                .image{
+                    width: 70%;
+                    max-width: 250px;
+                    margin: 14px auto 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width:576px){
+    .sell_buy_phone{
+        .items{
+            .item{
+                .image{
+                    width: 130px;
+                }
+            }
+        }
+    }
+}

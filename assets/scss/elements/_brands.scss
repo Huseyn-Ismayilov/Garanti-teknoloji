@@ -1,0 +1,28 @@
+.brands {
+    overflow: hidden;
+    margin: 100px 0;
+    .sect_title{
+        margin-bottom: 32px;
+    }
+    .slider{
+        overflow: hidden;
+        padding: 10px;
+        margin: 0 -10px;
+    }
+    .brand {
+        border: 1px solid #dddddd;
+        transition: .2s;
+        border-radius: 16px;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+@media (max-width: 768px){
+    .brands{
+        .slider{
+            overflow: visible;
+        }
+    }
+}

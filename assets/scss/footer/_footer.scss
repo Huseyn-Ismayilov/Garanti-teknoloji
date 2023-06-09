@@ -1,0 +1,198 @@
+.site_footer {
+    color: black;
+    border-top: 1px solid #dddddd;
+    overflow: hidden;
+    .wrapper {
+        flex-wrap: nowrap;
+    }
+    .foot_main {
+        .container {
+            height: 100%;
+        }
+        .wrapper {
+            align-items: center;
+            height: 100%;
+        }
+        .right {
+            border-left: 1px solid #dddddd;
+            padding: 56px 0;
+            padding-left: 96px;
+            flex-grow: 1;
+        }
+        h5 {
+            font-weight: 500;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    }
+    .main_menu {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 56px;
+    }
+    .contact_info {
+        display: flex;
+        gap: 32px;
+        .contact_item {
+            max-width: 385px;
+        }
+        a,
+        p {
+            display: block;
+            margin-bottom: 14px;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+    a:hover {
+        color: var(--gray-dark);
+    }
+    .menu {
+        a {
+            display: block;
+            font-weight: 400;
+            font-size: 14px;
+            padding: 7px 0;
+        }
+    }
+    .subscribe {
+        height: 100%;
+        padding-right: 32px;
+        .logo {
+            margin-bottom: 32px;
+            display: inline-block;
+        }
+        h3 {
+            font-weight: 600;
+            font-size: 18px;
+        }
+        p {
+            color: var(--gray-dark);
+            margin-bottom: 12px;
+        }
+        .sub_form {
+            position: relative;
+            .form_wrap {
+                display: flex;
+                align-items: center;
+            }
+            input {
+                width: 100%;
+                height: 44px;
+                border: 1px solid #dddddd;
+                border-radius: 16px;
+                font-weight: 500;
+                font-size: 14px;
+                color: var(--gray-dark);
+                padding: 16px;
+            }
+            .send_btn {
+                position: absolute;
+                right: 6px;
+            }
+        }
+    }
+    .social_media {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .foot_bottom {
+        border-top: 1px solid #dddddd;
+        padding: 20px 0;
+        .wrapper {
+            justify-content: space-between;
+            align-items: center;
+            gap: 14px;
+        }
+    }
+    .payment_methods {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            color: var(--gray-dark);
+        }
+    }
+    .social_media {
+        a {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            border-radius: 12px;
+            &:hover {
+                background-color: rgb(233, 233, 233);
+            }
+        }
+    }
+}
+@media (min-width: 991px) {
+    .site_footer .menu .title::after {
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    .site_footer {
+        padding-top: 24px;
+        .wrapper {
+            flex-wrap: wrap;
+        }
+        .subscribe {
+            width: 100%;
+            text-align: center;
+            padding-right: 0;
+        }
+        .foot_main {
+            .right {
+                border-left: unset;
+                padding: 24px 0;
+            }
+        }
+        .contact_info {
+            flex-direction: column;
+        }
+        .menu{
+            .title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &::after{
+                    content: "";
+                    background-image: url(../images/chevron-down.svg);
+                    background-size: contain;
+                    width: 24px;
+                    height: 24px;
+                    transition: .2s;
+                }
+                &.opened{
+                    &::after{
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+            ul{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .site_footer {
+        .main_menu {
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+            .menu {
+                width: 100%;
+                margin-bottom: 24px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
