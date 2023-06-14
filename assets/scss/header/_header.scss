@@ -182,7 +182,22 @@
         }
     }
 }
+.header01 {
+    padding: 32px 0;
+    border-bottom: 1px solid #e9e9e9;
 
+    .wrapper {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .back_shopping {
+        position: absolute;
+        left: 0;
+        color: black;
+        border: 1px solid black;
+    }
+}
 .mobile_menu {
     position: fixed;
     top: 0;
@@ -388,8 +403,16 @@
                 }
             }
             &::-webkit-scrollbar {
-                display: none
+                display: none;
             }
+        }
+    }
+    .header01 {
+        .wrapper {
+            justify-content: space-between;
+        }
+        .back_shopping {
+            position: relative;
         }
     }
 }
@@ -408,6 +431,22 @@
             .nav_item {
                 padding: 4px;
             }
+        }
+    }
+    .header01 {
+        padding: 20px 0;
+        .wrapper {
+            gap: 16px;
+            justify-content: space-between;
+        }
+        .site_logo {
+            width: 140px;
+            display: block;
+        }
+        .back_shopping {
+            padding: 6px 10px;
+            font-size: 13px;
+            gap: 4px;
         }
     }
 }

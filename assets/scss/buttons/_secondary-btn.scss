@@ -1,20 +1,26 @@
-.primary_btn {
+.secondary_btn {
     display: inline-flex;
     align-items: center;
     width: fit-content;
     position: relative;
     gap: 8px;
-    padding: 8px 18px;
-    background-color: var(--primary-color);
+    padding: 10px 20px;
+    background-color: transparent;
     white-space: nowrap;
-    color: white;
+    color: black;
+    border: 1px solid black;
     border-radius: 16px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     .arrow {
         svg {
             display: block;
         }
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: rgb(240, 240, 240);
     }
 }
 @media (max-width:991px) {

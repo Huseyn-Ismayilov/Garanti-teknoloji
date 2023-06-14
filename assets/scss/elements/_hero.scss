@@ -77,7 +77,36 @@
         .swiper-slide-thumb-active {
             img {
                 border-color: var(--primary-color);
-
+            }
+        }
+    }
+}
+.blog_hero {
+    background: unset;
+    .hero_slider {
+        .content {
+            background-color: var(--bg-color);
+        }
+        .items {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 16px;
+            li {
+                color: var(--gray-dark);
+                &:not(:last-child) {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    &::after {
+                        content: "";
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 50%;
+                        background-color: #dddddd;
+                    }
+                }
             }
         }
     }
@@ -104,7 +133,7 @@
                     aspect-ratio: 3/2;
                     object-fit: cover;
                 }
-            }   
+            }
         }
     }
 }
@@ -113,7 +142,7 @@
         padding: 25px 0;
         .hero_slider {
             margin-bottom: 15px;
-            .inner{
+            .inner {
                 padding-bottom: 0;
             }
             .content {

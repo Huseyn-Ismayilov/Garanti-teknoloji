@@ -1,48 +1,3 @@
-$(document).ready(function () {
-	var lastScroll = 0;
-
-	jQuery(document).ready(function ($) {
-		$(window).scroll(function () {
-			setTimeout(function () {
-				var scroll = $(window).scrollTop();
-				if (scroll > lastScroll) {
-					$(".site_header").addClass("scroll_down");
-				} else if (scroll < lastScroll) {
-					$(".site_header").removeClass("scroll_down");
-				}
-				lastScroll = scroll;
-			}, 100);
-		});
-	});
-});
-
-// end
-
-$('.site_header .menu_btn, .mobile_menu .close_btn').click(function () {
-	$('.mobile_menu').toggleClass('opened');
-	$('.nav_menu').toggleClass('opened');
-});
-
-$('.mobile_menu .menu .dropdown .nav_link').click(function (e) {
-	$(this).next().toggleClass('opened');
-	return false;
-});
-$('.mobile_menu .menu .back_btn').click(function (e) {
-	$(this).parent().removeClass('opened');
-});
-
-// end
-
-
-// end
-if ($(window).width() < 991) {
-	$(document).click(function (event) {
-		if (!$(event.target).closest(".site_header .menu_btn, .mobile_menu .inner").length) {
-			$("body").find(".mobile_menu .inner").parent().removeClass("opened");
-			$('.site_header .menu_btn').removeClass('opened');
-		}
-	});
-}
 
 if ($(window).width() < 991) {
 	$('.site_footer .menu .title').click(function () {
@@ -68,7 +23,6 @@ if ($(window).width() < 991) {
 // });
 
 $('#tabs-nav li:first-child').addClass('active');
-$('.tab-content').hide();
 $('.tab-content:first').show();
 
 $('#tabs-nav li').click(function () {
@@ -78,7 +32,6 @@ $('#tabs-nav li').click(function () {
 
 	var activeTab = $(this).find('a').attr('href');
 	$(activeTab).fadeIn();
-	return false;
 });
 
 
@@ -113,7 +66,7 @@ var discounted_products = new Swiper(".discounted_products .slider", {
 			slidesPerView: 4,
 			spaceBetween: 40,
 		},
-		
+
 	},
 	navigation: {
 		nextEl: ".discounted_products .next_arrow",
@@ -130,7 +83,7 @@ var featured_products = new Swiper(".featured_products .slider", {
 			slidesPerView: 4,
 			spaceBetween: 40,
 		},
-		
+
 	},
 	navigation: {
 		nextEl: ".featured_products .next_arrow",
@@ -146,7 +99,7 @@ var blog_slider = new Swiper(".blog_slider .slider", {
 			slidesPerView: 4,
 			spaceBetween: 32,
 		},
-		
+
 	},
 	navigation: {
 		nextEl: ".blog_slider .next_arrow",
@@ -267,3 +220,88 @@ $('.accardion_block').click(function () {
 	$(this).find('.block_head').toggleClass('opened');
 	$(this).find('.block_body').slideToggle();
 });
+
+
+$('.add').click(function () {
+	var th = $(this).closest('.quantity_wrap').find('.count');
+	th.val(+th.val() + 1);
+});
+$('.sub').click(function () {
+	var th = $(this).closest('.quantity_wrap').find('.count');
+	if (th.val() > 1) th.val(+th.val() - 1);
+});
+
+
+
+var brands = new Swiper(".similar_products .slider", {
+	spaceBetween: 20,
+	slidesPerView: 1.5,
+	freeMode: true,
+	breakpoints: {
+		991: {
+			slidesPerView: 2,
+			spaceBetween: 40,
+			freeMode: false,
+		},
+	},
+	navigation: {
+		nextEl: ".similar_products .next_arrow",
+		prevEl: ".similar_products .prev_arrow",
+	},
+
+});
+
+
+$('.products_list .block_title').click(function () {
+	$(this).toggleClass('opened');
+	$(this).next('.block_body').slideToggle();
+});
+
+
+
+$('.products_list .top .filter_btn, .products_list .top_title .close_btn').click(function () {
+	$('.products_list .sidebar_wrap').toggleClass('opened');
+});
+
+
+
+if ($(window).width() < 991) {
+	$(document).click(function (event) {
+		if (!$(event.target).closest(".products_list .top .filter_btn, .products_list .sidebar_wrap .sidebar").length) {
+			$("body").find(".products_list .sidebar_wrap").removeClass("opened");
+		}
+	});
+}
+
+
+$('.modal > .inner .close_btn').click(function () {
+	$(this).parents().eq(2).removeClass('opened');
+});
+
+// $(document).mouseup(function (e) {
+// 	if ($(e.target).closest(".modal .inner").length
+// 		=== 0) {
+// 		$('.modal').removeClass('opened')
+// 	}
+// });
+
+// $(".button").click(function(e){
+//     $(".modal").show();
+//      e.stopPropagation();
+// });
+
+// $(".modal .inner").click(function(e){
+//     e.stopPropagation();
+
+// });
+
+// $(document).click(function(){
+// 	$(".modal .inner").parent().addClass('asd')
+// });
+
+
+
+// if ($(e.target).closest(".modal .inner").length === 0) {
+// 	$(this).parent().addClass('asd')
+// }
+

@@ -166,6 +166,7 @@
             gap: 16px;
         }
         .color_check {
+            cursor: pointer;
             input {
                 display: none;
                 &:checked + .color {
@@ -205,6 +206,7 @@
             width: 238px;
             border: 1px solid #dddddd;
             border-radius: 16px;
+            overflow: hidden;
             .text {
                 padding-left: 36px;
                 h3 {

@@ -1,0 +1,120 @@
+.order_return {
+    padding: 56px 0;
+    .wrapper {
+        background-color: var(--bg-color);
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 24px 0;
+        border-radius: 24px;
+        > * {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        svg {
+            display: block;
+        }
+        .icon {
+            img {
+                width: 130px;
+            }
+        }
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            max-width: 410px;
+            margin: 0 auto 16px;
+        }
+        .returnPolicy {
+            display: flex;
+            width: 100%;
+            max-width: 340px;
+            justify-content: center;
+        }
+        .order_code {
+            span {
+                font-weight: 500;
+                font-size: 12px;
+                color: var(--gray-dark);
+            }
+            .code {
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+    }
+    .steps {
+        width: 100%;
+        max-width: 856px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-top: 56px;
+        .step_item {
+            padding: 16px;
+            border-radius: 16px;
+            border: 1px solid var(--bg-color);
+            > * {
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+            }
+            .icon {
+                border: 1px solid var(--bg-color);
+                border-radius: 99px;
+                padding: 2px 4px;
+                display: inline-block;
+                img {
+                    width: 100px;
+                }
+            }
+            h3 {
+                font-weight: 500;
+                font-size: 18px;
+            }
+            h4 {
+                font-weight: 600;
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+            .number {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+                color: white;
+                font-weight: 500;
+                font-size: 12px;
+            }
+            .info {
+                ul {
+                    padding-left: 20px;
+                    li {
+                        font-weight: 400;
+                        font-size: 14px;
+                        list-style: disc;
+                    }
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .order_return {
+        padding: 32px 0;
+        .wrapper {
+            padding: 24px 14px;
+        }
+        .steps {
+            grid-template-columns: 1fr;
+        }
+    }
+}

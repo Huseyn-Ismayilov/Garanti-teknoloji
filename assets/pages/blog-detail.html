@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../scss/main.css">
+</head>
+
+<body>
+    <div class="header_top">
+        <div class="container">
+            <div class="wrapper">
+                <div class="notification">
+                    <div class="icon">
+                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14 13.5896V0.410156L4.61151 3.99987H0V9.99987H4V14.9999H5.5V10.3396L14 13.5896ZM5.5 8.73369L12.5 11.4102V2.58959L5.5 5.26606V8.73369ZM4 8.49987V5.49987H1.5V8.49987H4Z"
+                                fill="#FF8300" />
+                        </svg>
+                    </div>
+                    <p>20 TL ve üzeri <u>Kargo</u> ücretsiz!</p>
+                </div>
+                <div class="top_links">
+                    <a href="">Sipariş Takibi</a>
+                    <a href="">Whatsapp Destek Hattı</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_header">
+        <div class="container">
+            <div class="wrapper">
+                <a href="" class="site_logo">
+                    <img src="../images/logo.svg" alt="">
+                </a>
+                <div class="search_bar">
+                    <form action="">
+                        <div class="form_wrap">
+                            <button type="button" class="search_btn">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.46338 8.54167C5.46338 6.58566 7.04904 5 9.00505 5C10.9611 5 12.5467 6.58566 12.5467 8.54167C12.5467 10.4977 10.9611 12.0833 9.00505 12.0833C7.04904 12.0833 5.46338 10.4977 5.46338 8.54167ZM9.00505 3.75C6.35868 3.75 4.21338 5.8953 4.21338 8.54167C4.21338 11.188 6.35868 13.3333 9.00505 13.3333C10.1029 13.3333 11.1145 12.9641 11.9225 12.3431L16.2714 16.6919C16.5155 16.936 16.9112 16.936 17.1553 16.6919C17.3994 16.4479 17.3994 16.0521 17.1553 15.8081L12.8064 11.4592C13.4275 10.6512 13.7967 9.63954 13.7967 8.54167C13.7967 5.8953 11.6514 3.75 9.00505 3.75Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                            <input type="text" placeholder="Yenilenmiş telefon ara..">
+                        </div>
+                    </form>
+                </div>
+                <div class="account_nav">
+                    <a href="" class="nav_item">
+                        <div class="icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.9998 7.33398C14.1589 7.33398 12.6665 8.82637 12.6665 10.6673C12.6665 12.5083 14.1589 14.0007 15.9998 14.0007C17.8408 14.0007 19.3332 12.5083 19.3332 10.6673C19.3332 8.82637 17.8408 7.33398 15.9998 7.33398ZM10.6665 10.6673C10.6665 7.7218 13.0543 5.33398 15.9998 5.33398C18.9454 5.33398 21.3332 7.7218 21.3332 10.6673C21.3332 13.6128 18.9454 16.0007 15.9998 16.0007C13.0543 16.0007 10.6665 13.6128 10.6665 10.6673ZM10.3332 20.0007C9.4127 20.0007 8.6665 20.7468 8.6665 21.6673V25.334C8.6665 25.8863 8.21879 26.334 7.6665 26.334C7.11422 26.334 6.6665 25.8863 6.6665 25.334V21.6673C6.6665 19.6423 8.30813 18.0007 10.3332 18.0007H21.6665C23.6915 18.0007 25.3332 19.6423 25.3332 21.6673V25.334C25.3332 25.8863 24.8855 26.334 24.3332 26.334C23.7809 26.334 23.3332 25.8863 23.3332 25.334V21.6673C23.3332 20.7468 22.587 20.0007 21.6665 20.0007H10.3332Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <span class="text">Giriş Yap</span>
+                    </a>
+                    <a href="" class="nav_item">
+                        <div class="icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.62624 7.95876C8.85772 5.72729 12.4756 5.72729 14.7071 7.95876L16 9.25165L17.2929 7.95876C19.5244 5.72729 23.1423 5.72729 25.3738 7.95876C27.6053 10.1902 27.6053 13.8082 25.3738 16.0396L17.6499 23.7635C16.7387 24.6747 15.2613 24.6747 14.3501 23.7635L6.62624 16.0396C4.39477 13.8082 4.39477 10.1902 6.62624 7.95876ZM13.2929 9.37298C11.8425 7.92255 9.49088 7.92255 8.04046 9.37298C6.59003 10.8234 6.59003 13.175 8.04046 14.6254L15.7643 22.3493C15.8945 22.4795 16.1055 22.4795 16.2357 22.3493L23.9596 14.6254C25.41 13.175 25.41 10.8234 23.9596 9.37297C22.5092 7.92255 20.1575 7.92255 18.7071 9.37298L16 12.0801L13.2929 9.37298Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <span class="text">Favorilerim</span>
+                    </a>
+                    <a href="" class="nav_item basket">
+                        <div class="icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4 7.33398H5.70681C6.4619 7.33398 7.12265 7.84162 7.3172 8.57121L7.52061 9.33398H7.52059L10.1725 19.2787C10.6006 20.8838 12.0542 22.0007 13.7154 22.0007H19.9179C21.6004 22.0007 23.067 20.8556 23.4751 19.2233L24.8084 13.8899C25.387 11.5757 23.6367 9.33398 21.2512 9.33398H9.5905L9.24967 8.05589C8.82165 6.45079 7.368 5.33398 5.70681 5.33398H4V7.33398ZM10.1238 11.334L12.105 18.7634C12.2996 19.493 12.9603 20.0007 13.7154 20.0007H19.9179C20.6827 20.0007 21.3493 19.4802 21.5348 18.7382L22.8681 13.4049C23.1311 12.353 22.3355 11.334 21.2512 11.334H10.1238ZM12 26.6673C12.7364 26.6673 13.3333 26.0704 13.3333 25.334C13.3333 24.5976 12.7364 24.0007 12 24.0007C11.2636 24.0007 10.6667 24.5976 10.6667 25.334C10.6667 26.0704 11.2636 26.6673 12 26.6673ZM21.3333 26.6673C22.0697 26.6673 22.6667 26.0704 22.6667 25.334C22.6667 24.5976 22.0697 24.0007 21.3333 24.0007C20.597 24.0007 20 24.5976 20 25.334C20 26.0704 20.597 26.6673 21.3333 26.6673Z"
+                                    fill="#FF8300" />
+                            </svg>
+                            <span class="count">3</span>
+                        </div>
+                        <span class="text">Sepetim</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header nav_menu">
+        <div class="container">
+            <ul class="menu">
+                <li class="nav_item">
+                    <a href="" class="nav_link">CEP TELEFONU
+                        <div class="arrow">
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.808058 0.308941C1.05214 0.0648632 1.44786 0.0648632 1.69194 0.308941L5 3.617L8.30806 0.30894C8.55214 0.0648629 8.94786 0.0648629 9.19194 0.30894C9.43602 0.553018 9.43602 0.948746 9.19194 1.19282L5 5.38477L0.808058 1.19282C0.56398 0.948746 0.56398 0.553019 0.808058 0.308941Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="" class="nav_link">TABLET
+                        <div class="arrow">
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.808058 0.308941C1.05214 0.0648632 1.44786 0.0648632 1.69194 0.308941L5 3.617L8.30806 0.30894C8.55214 0.0648629 8.94786 0.0648629 9.19194 0.30894C9.43602 0.553018 9.43602 0.948746 9.19194 1.19282L5 5.38477L0.808058 1.19282C0.56398 0.948746 0.56398 0.553019 0.808058 0.308941Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="" class="nav_link">LAPTOP/PC
+                        <div class="arrow">
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.808058 0.308941C1.05214 0.0648632 1.44786 0.0648632 1.69194 0.308941L5 3.617L8.30806 0.30894C8.55214 0.0648629 8.94786 0.0648629 9.19194 0.30894C9.43602 0.553018 9.43602 0.948746 9.19194 1.19282L5 5.38477L0.808058 1.19282C0.56398 0.948746 0.56398 0.553019 0.808058 0.308941Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="" class="nav_link">AKSESUARLAR</a>
+                </li>
+                <li class="nav_item">
+                    <a href="" class="nav_link">CİHAZ SAT</a>
+                </li>
+                <li class="nav_item">
+                    <a href="" class="nav_link">HAFIZANI YÜKSELT</a>
+                </li>
+                <li class="nav_item">
+                    <a href="" class="nav_link">MAĞAZALARIMIZ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  
+    <main>
+        <section class="single_blog">
+            <div class="container">
+                <div class="top_content">
+                    <ul class="items">
+                        <li>Telefon</li>
+                        <li>16 Mayıs 2023</li>
+                        <li>Son Güncelleme: <span>20 Mayıs 2023</span></li>
+                        <li>7 dk da okunur</li>
+                    </ul>
+                    <div class="blog_title">
+                        <h1>“Telefon Kendi Kendine Kapanıp <span>Açılıyor” Sorunu</span></h1>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur. Nunc tellus adipiscing consequat id nunc amet facilisis.
+                        Elementum non ipsum lectus odio. Montes at pellentesque volutpat quisque et cursus.</p>
+                </div>
+                <div class="blog_image">
+                    <img src="../images/blog-image.png" alt="">
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur. Non in in odio viverra nisi quis feugiat nulla. Dictum
+                        amet elit vestibulum leo. Ultrices at lorem quis scelerisque amet enim tellus sollicitudin.
+                        Sodales aliquam urna morbi nunc. Ullamcorper ac est massa vitae vestibulum vitae venenatis.
+                        Ultrices aliquet egestas convallis enim scelerisque sit in diam ante. Egestas leo fames sed
+                        posuere. Aliquam pharetra dignissim elementum orci elementum habitant fermentum et. Vitae rutrum
+                        imperdiet nunc netus feugiat sollicitudin nunc. Sed.</p>
+                    <h2>Lorem ipsum dolar sit amet</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Nullam sed consequat netus imperdiet mi tellus accumsan
+                        id urna. Laoreet lacus ut sollicitudin dolor donec netus eu est enim. Feugiat vel diam urna sed
+                        erat nisl vestibulum tellus mauris. Ultricies vitae interdum vitae cras vitae amet. Sed mi
+                        turpis mauris tristique.
+                        Hac nunc nam condimentum sit congue parturient semper lorem.
+                        <br><br>
+                        Pretium lacus quis dignissim nibh suspendisse ullamcorper. Et convallis felis in morbi. Nunc ut
+                        gravida cum dui eu in. Amet convallis orci nisl ut donec feugiat lorem duis duis. Elementum est
+                        risus aliquam blandit viverra sit venenatis. Convallis risus elit tortor venenatis sed
+                        scelerisque. Mi fames ullamcorper placerat feugiat turpis parturient adipiscing pulvinar. In
+                        nunc duis diam in fames dictumst enim. Blandit pellentesque eu eget aenean in tincidunt. Tortor
+                        porta lacus tortor turpis malesuada aliquam. Purus congue ipsum magna vel sit viverra sagittis.
+                    </p>
+                    <div class="image0">
+                        <img src="../images/blog3.png" alt="">
+                    </div>
+                    <div class="testimonial">
+                        <div class="title">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.875 28.75L21.875 15C21.875 13.0109 22.6652 11.1032 24.0717 9.6967C25.4782 8.29018 27.3859 7.5 29.375 7.5C29.7065 7.5 30.0245 7.63169 30.2589 7.86612C30.4933 8.10054 30.625 8.41848 30.625 8.75C30.625 9.08152 30.4933 9.39946 30.2589 9.63388C30.0245 9.8683 29.7065 10 29.375 10C28.0502 10.0041 26.7808 10.5322 25.844 11.469C24.9072 12.4058 24.3791 13.6752 24.375 15L24.375 16.25L33.75 16.25C34.413 16.25 35.0489 16.5134 35.5178 16.9822C35.9866 17.4511 36.25 18.087 36.25 18.75L36.25 28.75C36.25 29.413 35.9866 30.0489 35.5178 30.5178C35.0489 30.9866 34.413 31.25 33.75 31.25L24.375 31.25C23.712 31.25 23.0761 30.9866 22.6072 30.5178C22.1384 30.0489 21.875 29.413 21.875 28.75ZM6.25 31.25L15.625 31.25C16.288 31.25 16.9239 30.9866 17.3928 30.5178C17.8616 30.0489 18.125 29.413 18.125 28.75L18.125 18.75C18.125 18.087 17.8616 17.4511 17.3928 16.9822C16.9239 16.5134 16.288 16.25 15.625 16.25L6.25 16.25L6.25 15C6.25412 13.6752 6.78223 12.4058 7.71902 11.469C8.65581 10.5322 9.92519 10.0041 11.25 10C11.5815 10 11.8995 9.8683 12.1339 9.63388C12.3683 9.39946 12.5 9.08152 12.5 8.75C12.5 8.41848 12.3683 8.10053 12.1339 7.86611C11.8995 7.63169 11.5815 7.5 11.25 7.5C9.26088 7.5 7.35323 8.29017 5.9467 9.6967C4.54018 11.1032 3.75 13.0109 3.75 15L3.75 28.75C3.75 29.413 4.01339 30.0489 4.48224 30.5178C4.95108 30.9866 5.58696 31.25 6.25 31.25Z"
+                                    fill="#FF8300" />
+                            </svg>
+                            <span>Testimonial</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Purus a quam faucibus quis nascetur rhoncus fames
+                            magna. Suspendisse orci pharetra praesent tincidunt est placerat nulla sed luctus. Lectus et
+                            pulvinar nullam blandit laoreet ipsum. Vestibulum felis risus interdum aenean. Lobortis et
+                            libero nunc tellus amet morbi vitae pellentesque. Imperdiet tortor sed placerat mi.</p>
+                    </div>
+                    <h2>Lorem ipsum dolar sit amet</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Nullam sed consequat netus imperdiet mi tellus accumsan
+                        id urna. Laoreet lacus ut sollicitudin dolor donec netus eu est enim.
+                        <br><br>
+                        Feugiat vel diam urna sed erat nisl vestibulum tellus mauris. Ultricies vitae interdum vitae
+                        cras vitae amet. Sed mi turpis mauris tristique.
+                        Hac nunc nam condimentum sit congue parturient semper lorem.
+                        <br><br>
+                        Pretium lacus quis dignissim nibh suspendisse ullamcorper. Et convallis felis in morbi. Nunc ut
+                        gravida cum dui eu in. Amet convallis orci nisl ut donec feugiat lorem duis duis.
+                        <br><br>
+                        Elementum est risus aliquam blandit viverra sit venenatis. Convallis risus elit tortor venenatis
+                        sed scelerisque. Mi fames ullamcorper placerat feugiat turpis parturient adipiscing pulvinar. In
+                        nunc duis diam in fames dictumst enim. Blandit pellentesque eu eget aenean in tincidunt. Tortor
+                        porta lacus tortor turpis malesuada aliquam. Purus congue ipsum magna vel sit viverra sagittis.
+                    </p>
+                    <h2>Lorem ipsum dolar sit amet</h2>
+                    <div class="image0">
+                        <img src="../images/blog1.png" alt="">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Nullam sed consequat netus imperdiet mi tellus accumsan
+                        id urna. Laoreet lacus ut sollicitudin dolor donec netus eu est enim.
+                        <br><br>
+                        Feugiat vel diam urna sed erat nisl vestibulum tellus mauris. Ultricies vitae interdum vitae
+                        cras vitae amet. Sed mi turpis mauris tristique.
+                        Hac nunc nam condimentum sit congue parturient semper lorem.
+                        <br><br>
+                        Pretium lacus quis dignissim nibh suspendisse ullamcorper. Et convallis felis in morbi. Nunc ut
+                        gravida cum dui eu in. Amet convallis orci nisl ut donec feugiat lorem duis duis.
+                        <br><br>
+                        Elementum est risus aliquam blandit viverra sit venenatis. Convallis risus elit tortor venenatis
+                        sed scelerisque. Mi fames ullamcorper placerat feugiat turpis parturient adipiscing pulvinar. In
+                        nunc duis diam in fames dictumst enim. Blandit pellentesque eu eget aenean in tincidunt. Tortor
+                        porta lacus tortor turpis malesuada aliquam. Purus congue ipsum magna vel sit viverra sagittis.
+                    </p>
+                    <div class="product_slider similar_products">
+                        <div class="slider products_grid">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="../pages/single-product.html" class="product_item">
+                                        <div class="product_image">
+                                            <div class="status">
+                                                <span class="battery">Pil: 96%</span>
+                                                <span class="cosmetic">Kozmetik: Çok İyi</span>
+                                                <span class="quality">Kalite: A</span>
+                                            </div>
+                                            <div class="clr_optns">
+                                                <img src="../images/clr.svg" alt="">
+                                                <span>6</span>
+                                            </div>
+                                            <div class="fvrt_btn">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M3.31288 3.97938C4.42861 2.86364 6.23758 2.86364 7.35332 3.97938L7.99976 4.62583L8.64621 3.97938C9.76195 2.86365 11.5709 2.86364 12.6867 3.97938C13.8024 5.09512 13.8024 6.90408 12.6867 8.01982L8.82472 11.8817C8.36911 12.3374 7.63041 12.3374 7.1748 11.8817L3.31288 8.01982C2.19714 6.90408 2.19714 5.09512 3.31288 3.97938ZM6.64621 4.68649C5.921 3.96127 4.7452 3.96127 4.01998 4.68649C3.29477 5.4117 3.29477 6.5875 4.01998 7.31272L7.88191 11.1746C7.947 11.2397 8.05252 11.2397 8.11761 11.1746L11.9795 7.31271C12.7048 6.5875 12.7048 5.4117 11.9795 4.68649C11.2543 3.96127 10.0785 3.96128 9.35332 4.68649L7.99976 6.04004L6.64621 4.68649Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                            <div class="image">
+                                                <img src="../images/image 4.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="details">
+                                            <div class="title">
+                                                <h3>Apple</h3>
+                                            </div>
+                                            <p>iPhone 12 Pro 128 GB</p>
+                                            <div class="rating_wrap">
+                                                <div class="rating">
+                                                    <span class="active" style="width: 90%;"></span>
+                                                </div>
+                                                <span>4.502</span>
+                                            </div>
+                                            <div class="price">
+                                                <div class="dis">%12</div>
+                                                <div class="text">
+                                                    <span>53.204,00 TL</span>
+                                                    <h3>45.234,00 TL</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="../pages/single-product.html" class="product_item">
+                                        <div class="product_image">
+                                            <div class="status">
+                                                <span class="battery">Pil: 96%</span>
+                                                <span class="cosmetic">Kozmetik: Çok İyi</span>
+                                                <span class="quality">Kalite: A</span>
+                                            </div>
+                                            <div class="clr_optns">
+                                                <img src="../images/clr.svg" alt="">
+                                                <span>6</span>
+                                            </div>
+                                            <div class="fvrt_btn">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M3.31288 3.97938C4.42861 2.86364 6.23758 2.86364 7.35332 3.97938L7.99976 4.62583L8.64621 3.97938C9.76195 2.86365 11.5709 2.86364 12.6867 3.97938C13.8024 5.09512 13.8024 6.90408 12.6867 8.01982L8.82472 11.8817C8.36911 12.3374 7.63041 12.3374 7.1748 11.8817L3.31288 8.01982C2.19714 6.90408 2.19714 5.09512 3.31288 3.97938ZM6.64621 4.68649C5.921 3.96127 4.7452 3.96127 4.01998 4.68649C3.29477 5.4117 3.29477 6.5875 4.01998 7.31272L7.88191 11.1746C7.947 11.2397 8.05252 11.2397 8.11761 11.1746L11.9795 7.31271C12.7048 6.5875 12.7048 5.4117 11.9795 4.68649C11.2543 3.96127 10.0785 3.96128 9.35332 4.68649L7.99976 6.04004L6.64621 4.68649Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                            <div class="image">
+                                                <img src="../images/image 5.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="details">
+                                            <div class="title">
+                                                <h3>Apple</h3>
+                                            </div>
+                                            <p>iPhone 12 Pro 128 GB</p>
+                                            <div class="rating_wrap">
+                                                <div class="rating">
+                                                    <span class="active" style="width: 90%;"></span>
+                                                </div>
+                                                <span>4.502</span>
+                                            </div>
+                                            <div class="price">
+                                                <div class="dis">%12</div>
+                                                <div class="text">
+                                                    <span>53.204,00 TL</span>
+                                                    <h3>45.234,00 TL</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="../pages/single-product.html" class="product_item">
+                                        <div class="product_image">
+                                            <div class="status">
+                                                <span class="battery">Pil: 96%</span>
+                                                <span class="cosmetic">Kozmetik: Çok İyi</span>
+                                                <span class="quality">Kalite: A</span>
+                                            </div>
+                                            <div class="clr_optns">
+                                                <img src="../images/clr.svg" alt="">
+                                                <span>6</span>
+                                            </div>
+                                            <div class="fvrt_btn">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M3.31288 3.97938C4.42861 2.86364 6.23758 2.86364 7.35332 3.97938L7.99976 4.62583L8.64621 3.97938C9.76195 2.86365 11.5709 2.86364 12.6867 3.97938C13.8024 5.09512 13.8024 6.90408 12.6867 8.01982L8.82472 11.8817C8.36911 12.3374 7.63041 12.3374 7.1748 11.8817L3.31288 8.01982C2.19714 6.90408 2.19714 5.09512 3.31288 3.97938ZM6.64621 4.68649C5.921 3.96127 4.7452 3.96127 4.01998 4.68649C3.29477 5.4117 3.29477 6.5875 4.01998 7.31272L7.88191 11.1746C7.947 11.2397 8.05252 11.2397 8.11761 11.1746L11.9795 7.31271C12.7048 6.5875 12.7048 5.4117 11.9795 4.68649C11.2543 3.96127 10.0785 3.96128 9.35332 4.68649L7.99976 6.04004L6.64621 4.68649Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                            <div class="image">
+                                                <img src="../images/image 6.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="details">
+                                            <div class="title">
+                                                <h3>Apple</h3>
+                                            </div>
+                                            <p>iPhone 12 Pro 128 GB</p>
+                                            <div class="rating_wrap">
+                                                <div class="rating">
+                                                    <span class="active" style="width: 90%;"></span>
+                                                </div>
+                                                <span>4.502</span>
+                                            </div>
+                                            <div class="price">
+                                                <div class="dis">%12</div>
+                                                <div class="text">
+                                                    <span>53.204,00 TL</span>
+                                                    <h3>45.234,00 TL</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="../pages/single-product.html" class="product_item">
+                                        <div class="product_image">
+                                            <div class="status">
+                                                <span class="battery">Pil: 96%</span>
+                                                <span class="cosmetic">Kozmetik: Çok İyi</span>
+                                                <span class="quality">Kalite: A</span>
+                                            </div>
+                                            <div class="clr_optns">
+                                                <img src="../images/clr.svg" alt="">
+                                                <span>6</span>
+                                            </div>
+                                            <div class="fvrt_btn">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M3.31288 3.97938C4.42861 2.86364 6.23758 2.86364 7.35332 3.97938L7.99976 4.62583L8.64621 3.97938C9.76195 2.86365 11.5709 2.86364 12.6867 3.97938C13.8024 5.09512 13.8024 6.90408 12.6867 8.01982L8.82472 11.8817C8.36911 12.3374 7.63041 12.3374 7.1748 11.8817L3.31288 8.01982C2.19714 6.90408 2.19714 5.09512 3.31288 3.97938ZM6.64621 4.68649C5.921 3.96127 4.7452 3.96127 4.01998 4.68649C3.29477 5.4117 3.29477 6.5875 4.01998 7.31272L7.88191 11.1746C7.947 11.2397 8.05252 11.2397 8.11761 11.1746L11.9795 7.31271C12.7048 6.5875 12.7048 5.4117 11.9795 4.68649C11.2543 3.96127 10.0785 3.96128 9.35332 4.68649L7.99976 6.04004L6.64621 4.68649Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                            <div class="image">
+                                                <img src="../images/image 7.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="details">
+                                            <div class="title">
+                                                <h3>Apple</h3>
+                                            </div>
+                                            <p>iPhone 12 Pro 128 GB</p>
+                                            <div class="rating_wrap">
+                                                <div class="rating">
+                                                    <span class="active" style="width: 90%;"></span>
+                                                </div>
+                                                <span>4.502</span>
+                                            </div>
+                                            <div class="price">
+                                                <div class="dis">%12</div>
+                                                <div class="text">
+                                                    <span>53.204,00 TL</span>
+                                                    <h3>45.234,00 TL</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="../pages/single-product.html" class="product_item">
+                                        <div class="product_image">
+                                            <div class="status">
+                                                <span class="battery">Pil: 96%</span>
+                                                <span class="cosmetic">Kozmetik: Çok İyi</span>
+                                                <span class="quality">Kalite: A</span>
+                                            </div>
+                                            <div class="clr_optns">
+                                                <img src="../images/clr.svg" alt="">
+                                                <span>6</span>
+                                            </div>
+                                            <div class="fvrt_btn">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M3.31288 3.97938C4.42861 2.86364 6.23758 2.86364 7.35332 3.97938L7.99976 4.62583L8.64621 3.97938C9.76195 2.86365 11.5709 2.86364 12.6867 3.97938C13.8024 5.09512 13.8024 6.90408 12.6867 8.01982L8.82472 11.8817C8.36911 12.3374 7.63041 12.3374 7.1748 11.8817L3.31288 8.01982C2.19714 6.90408 2.19714 5.09512 3.31288 3.97938ZM6.64621 4.68649C5.921 3.96127 4.7452 3.96127 4.01998 4.68649C3.29477 5.4117 3.29477 6.5875 4.01998 7.31272L7.88191 11.1746C7.947 11.2397 8.05252 11.2397 8.11761 11.1746L11.9795 7.31271C12.7048 6.5875 12.7048 5.4117 11.9795 4.68649C11.2543 3.96127 10.0785 3.96128 9.35332 4.68649L7.99976 6.04004L6.64621 4.68649Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                            <div class="image">
+                                                <img src="../images/image 5.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="details">
+                                            <div class="title">
+                                                <h3>Apple</h3>
+                                            </div>
+                                            <p>iPhone 12 Pro 128 GB</p>
+                                            <div class="rating_wrap">
+                                                <div class="rating">
+                                                    <span class="active" style="width: 90%;"></span>
+                                                </div>
+                                                <span>4.502</span>
+                                            </div>
+                                            <div class="price">
+                                                <div class="dis">%12</div>
+                                                <div class="text">
+                                                    <span>53.204,00 TL</span>
+                                                    <h3>45.234,00 TL</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="../pages/single-product.html" class="product_item">
+                                        <div class="product_image">
+                                            <div class="status">
+                                                <span class="battery">Pil: 96%</span>
+                                                <span class="cosmetic">Kozmetik: Çok İyi</span>
+                                                <span class="quality">Kalite: A</span>
+                                            </div>
+                                            <div class="clr_optns">
+                                                <img src="../images/clr.svg" alt="">
+                                                <span>6</span>
+                                            </div>
+                                            <div class="fvrt_btn">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M3.31288 3.97938C4.42861 2.86364 6.23758 2.86364 7.35332 3.97938L7.99976 4.62583L8.64621 3.97938C9.76195 2.86365 11.5709 2.86364 12.6867 3.97938C13.8024 5.09512 13.8024 6.90408 12.6867 8.01982L8.82472 11.8817C8.36911 12.3374 7.63041 12.3374 7.1748 11.8817L3.31288 8.01982C2.19714 6.90408 2.19714 5.09512 3.31288 3.97938ZM6.64621 4.68649C5.921 3.96127 4.7452 3.96127 4.01998 4.68649C3.29477 5.4117 3.29477 6.5875 4.01998 7.31272L7.88191 11.1746C7.947 11.2397 8.05252 11.2397 8.11761 11.1746L11.9795 7.31271C12.7048 6.5875 12.7048 5.4117 11.9795 4.68649C11.2543 3.96127 10.0785 3.96128 9.35332 4.68649L7.99976 6.04004L6.64621 4.68649Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                            <div class="image">
+                                                <img src="../images/image 6.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="details">
+                                            <div class="title">
+                                                <h3>Apple</h3>
+                                            </div>
+                                            <p>iPhone 12 Pro 128 GB</p>
+                                            <div class="rating_wrap">
+                                                <div class="rating">
+                                                    <span class="active" style="width: 90%;"></span>
+                                                </div>
+                                                <span>4.502</span>
+                                            </div>
+                                            <div class="price">
+                                                <div class="dis">%12</div>
+                                                <div class="text">
+                                                    <span>53.204,00 TL</span>
+                                                    <h3>45.234,00 TL</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="../pages/single-product.html" class="product_item">
+                                        <div class="product_image">
+                                            <div class="status">
+                                                <span class="battery">Pil: 96%</span>
+                                                <span class="cosmetic">Kozmetik: Çok İyi</span>
+                                                <span class="quality">Kalite: A</span>
+                                            </div>
+                                            <div class="clr_optns">
+                                                <img src="../images/clr.svg" alt="">
+                                                <span>6</span>
+                                            </div>
+                                            <div class="fvrt_btn">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M3.31288 3.97938C4.42861 2.86364 6.23758 2.86364 7.35332 3.97938L7.99976 4.62583L8.64621 3.97938C9.76195 2.86365 11.5709 2.86364 12.6867 3.97938C13.8024 5.09512 13.8024 6.90408 12.6867 8.01982L8.82472 11.8817C8.36911 12.3374 7.63041 12.3374 7.1748 11.8817L3.31288 8.01982C2.19714 6.90408 2.19714 5.09512 3.31288 3.97938ZM6.64621 4.68649C5.921 3.96127 4.7452 3.96127 4.01998 4.68649C3.29477 5.4117 3.29477 6.5875 4.01998 7.31272L7.88191 11.1746C7.947 11.2397 8.05252 11.2397 8.11761 11.1746L11.9795 7.31271C12.7048 6.5875 12.7048 5.4117 11.9795 4.68649C11.2543 3.96127 10.0785 3.96128 9.35332 4.68649L7.99976 6.04004L6.64621 4.68649Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                            <div class="image">
+                                                <img src="../images/image 7.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="details">
+                                            <div class="title">
+                                                <h3>Apple</h3>
+                                            </div>
+                                            <p>iPhone 12 Pro 128 GB</p>
+                                            <div class="rating_wrap">
+                                                <div class="rating">
+                                                    <span class="active" style="width: 90%;"></span>
+                                                </div>
+                                                <span>4.502</span>
+                                            </div>
+                                            <div class="price">
+                                                <div class="dis">%12</div>
+                                                <div class="text">
+                                                    <span>53.204,00 TL</span>
+                                                    <h3>45.234,00 TL</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Lorem ipsum dolar sit amet</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Nullam sed consequat netus imperdiet mi tellus accumsan
+                        id urna. Laoreet lacus ut sollicitudin dolor donec netus eu est enim.
+                        <br><br>
+                        Feugiat vel diam urna sed erat nisl vestibulum tellus mauris. Ultricies vitae interdum vitae
+                        cras vitae amet. Sed mi turpis mauris tristique.
+                    </p>
+                    <h2>Lorem ipsum dolar sit amet</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Nullam sed consequat netus imperdiet mi tellus accumsan
+                        id urna. Laoreet lacus ut sollicitudin dolor donec netus eu est enim.
+                        <br><br>
+                        Feugiat vel diam urna sed erat nisl vestibulum tellus mauris. Ultricies vitae interdum vitae
+                        cras vitae amet. Sed mi turpis mauris tristique.
+                        Hac nunc nam condimentum sit congue parturient semper lorem.
+                        <br><br>
+                        Pretium lacus quis dignissim nibh suspendisse ullamcorper. Et convallis felis in morbi. Nunc ut
+                        gravida cum dui eu in. Amet convallis orci nisl ut donec feugiat lorem duis duis.
+                        <br><br>
+                        Elementum est risus aliquam blandit viverra sit venenatis. Convallis risus elit tortor venenatis
+                        sed scelerisque. Mi fames ullamcorper placerat feugiat turpis parturient adipiscing pulvinar. In
+                        nunc duis diam in fames dictumst enim. Blandit pellentesque eu eget aenean in tincidunt. Tortor
+                        porta lacus tortor turpis malesuada aliquam. Purus congue ipsum magna vel sit viverra sagittis.
+                    </p>
+                </div>
+                <div class="content share_blog">
+                    <div class="icon">
+                        <svg width="72" height="48" viewBox="0 0 72 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="72" height="48" rx="24" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M36.9957 14C37.548 14 37.9957 14.4477 37.9957 15V17.25C37.9957 17.8023 37.548 18.25 36.9957 18.25C36.4434 18.25 35.9957 17.8023 35.9957 17.25V15C35.9957 14.4477 36.4434 14 36.9957 14ZM43.7457 14.75C44.298 14.75 44.7457 15.1977 44.7457 15.75H43.7457C44.7457 15.75 44.7457 15.7505 44.7457 15.751L44.7457 15.7521L44.7457 15.7543L44.7457 15.7596L44.7455 15.7726C44.7453 15.7824 44.7451 15.7944 44.7446 15.8086C44.7437 15.8369 44.7419 15.8737 44.7388 15.9179C44.7325 16.006 44.7204 16.1254 44.6969 16.266C44.6509 16.5424 44.5569 16.9262 44.3589 17.3222C44.1589 17.7221 43.8433 18.1524 43.3512 18.4805C42.8528 18.8128 42.2332 19 41.4957 19C41.1082 19 40.884 19.094 40.7496 19.1836C40.6089 19.2774 40.5027 19.4096 40.4214 19.5722C40.3381 19.7387 40.2915 19.9174 40.2672 20.0628C40.2555 20.1332 40.25 20.1896 40.2476 20.2246C40.2463 20.2419 40.2458 20.2534 40.2457 20.258L40.2457 20.2592C40.2407 20.8072 39.7949 21.25 39.2457 21.25C38.6934 21.25 38.2457 20.8023 38.2457 20.25H39.2457C38.2457 20.25 38.2457 20.2495 38.2457 20.249L38.2457 20.2479L38.2457 20.2457L38.2457 20.2404L38.2459 20.2274C38.2461 20.2176 38.2463 20.2056 38.2468 20.1914C38.2477 20.1631 38.2495 20.1263 38.2526 20.0821C38.2589 19.994 38.271 19.8746 38.2945 19.734C38.3405 19.4576 38.4345 19.0738 38.6325 18.6778C38.8325 18.2779 39.1481 17.8476 39.6402 17.5195C40.1386 17.1872 40.7582 17 41.4957 17C41.8832 17 42.1074 16.906 42.2418 16.8164C42.3824 16.7226 42.4887 16.5904 42.57 16.4278C42.6533 16.2613 42.6999 16.0826 42.7241 15.9372C42.7359 15.8668 42.7413 15.8104 42.7438 15.7754C42.7451 15.7581 42.7455 15.7466 42.7457 15.742L42.7457 15.7408L42.7458 15.7408L43.7457 14.75ZM29.301 29.7196L28.1742 32.8215L31.2761 31.6947L29.301 29.7196ZM27.9341 27.6247L26.1112 32.643C25.9942 32.9543 25.9689 33.2928 26.0383 33.6182C26.1084 33.9469 26.2722 34.2482 26.5098 34.4859C26.7475 34.7235 27.0488 34.8873 27.3775 34.9574C27.703 35.0268 28.0414 35.0015 28.3527 34.8845L33.3709 33.0616C33.4158 33.0488 33.4599 33.0328 33.503 33.0136L38.3509 31.2525C38.3756 31.2446 38.4001 31.2357 38.4243 31.2259L42.231 29.843C42.5082 29.7422 42.7555 29.5731 42.9498 29.3512C43.1441 29.1293 43.2792 28.8618 43.3425 28.5737C43.4058 28.2856 43.3952 27.9862 43.3118 27.7033C43.2287 27.4213 43.0759 27.1649 42.8675 26.9575L42.8654 26.9555L34.0402 18.1303L34.0384 18.1285C33.8311 17.92 33.5745 17.767 33.2924 17.6839C33.0095 17.6004 32.71 17.5899 32.422 17.6532C32.1339 17.7165 31.8664 17.8516 31.6445 18.0459C31.4226 18.2402 31.2534 18.4876 31.1527 18.7648L29.7699 22.5714C29.76 22.5956 29.7511 22.6201 29.7431 22.6449L27.9821 27.4928C27.9629 27.5358 27.9469 27.5799 27.9341 27.6247ZM31.0997 24.7682L30.0547 27.6448L33.3509 30.941L36.2275 29.896L31.0997 24.7682ZM38.3022 29.1423L41.1788 28.0973L32.8984 19.8169L31.8534 22.6935L38.3022 29.1423ZM45.9528 24.7929L44.4528 23.2929C44.0623 22.9024 43.4291 22.9024 43.0386 23.2929C42.6481 23.6834 42.6481 24.3166 43.0386 24.7071L44.5386 26.2071C44.9291 26.5976 45.5623 26.5976 45.9528 26.2071C46.3433 25.8166 46.3433 25.1834 45.9528 24.7929ZM46.9444 19.9338C47.119 20.4577 46.8359 21.024 46.3119 21.1987L44.0619 21.9487C43.538 22.1233 42.9717 21.8402 42.797 21.3162C42.6224 20.7923 42.9055 20.226 43.4295 20.0513L45.6795 19.3013C46.2034 19.1267 46.7697 19.4098 46.9444 19.9338Z"
+                                fill="#FF8300" />
+                        </svg>
+                    </div>
+                    <p>Makaleyi beğendiniz ve paylaşmak mı istiyorsunuz?</p>
+                    <div class="social_media">
+                        <a href="">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3 12.0452C3 16.5226 6.24 20.2312 10.515 21L10.5682 20.9563C10.5655 20.9558 10.5627 20.9553 10.56 20.9548V14.5779H8.31002V12.0452H10.56V10.0553C10.56 7.79399 12 6.52766 14.07 6.52766C14.7 6.52766 15.42 6.61811 16.05 6.70856V9.0151H14.88C13.8 9.0151 13.53 9.55781 13.53 10.2814V12.0452H15.915L15.51 14.5779H13.53V20.9548C13.5026 20.9598 13.4752 20.9647 13.4478 20.9694L13.485 21C17.76 20.2312 21 16.5226 21 12.0452C21 7.07035 16.95 3 12 3C7.05 3 3 7.07035 3 12.0452Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.1572 7.73421C19.1682 7.89695 19.1682 8.05969 19.1682 8.22393C19.1682 13.2284 15.4534 19 8.6607 19V18.997C6.65411 19 4.68921 18.4105 3 17.2991C3.29177 17.3351 3.58501 17.3531 3.87898 17.3539C5.54186 17.3554 7.15722 16.7831 8.46545 15.7295C6.88519 15.6987 5.49945 14.642 5.01536 13.0994C5.56892 13.2089 6.13931 13.1864 6.68263 13.0341C4.95978 12.6771 3.72029 11.1247 3.72029 9.32186V9.27386C4.23364 9.5671 4.80841 9.72984 5.39634 9.74783C3.77367 8.63565 3.27349 6.42179 4.25338 4.6909C6.12834 7.057 8.8947 8.49541 11.8644 8.64765C11.5667 7.33224 11.9733 5.95382 12.9327 5.02913C14.4201 3.59522 16.7594 3.66872 18.1576 5.19337C18.9846 5.02613 19.7773 4.7149 20.5027 4.27393C20.2271 5.15062 19.6501 5.89533 18.8793 6.36855C19.6113 6.28005 20.3265 6.07907 21 5.77234C20.5042 6.53429 19.8797 7.198 19.1572 7.73421Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.1538 3H7.84615C6.5613 3.00137 5.32946 3.51239 4.42092 4.42092C3.51239 5.32946 3.00137 6.5613 3 7.84615V16.1538C3.00137 17.4387 3.51239 18.6705 4.42092 19.5791C5.32946 20.4876 6.5613 20.9986 7.84615 21H16.1538C17.4387 20.9986 18.6705 20.4876 19.5791 19.5791C20.4876 18.6705 20.9986 17.4387 21 16.1538V7.84615C20.9986 6.5613 20.4876 5.32946 19.5791 4.42092C18.6705 3.51239 17.4387 3.00137 16.1538 3ZM12 16.1538C11.1784 16.1538 10.3753 15.9102 9.69225 15.4538C9.00915 14.9974 8.47674 14.3486 8.16235 13.5896C7.84795 12.8306 7.76569 11.9954 7.92597 11.1896C8.08625 10.3839 8.48186 9.64371 9.06279 9.06279C9.64371 8.48186 10.3839 8.08625 11.1896 7.92597C11.9954 7.76569 12.8306 7.84795 13.5896 8.16235C14.3486 8.47674 14.9974 9.00915 15.4538 9.69225C15.9102 10.3753 16.1538 11.1784 16.1538 12C16.1527 13.1013 15.7147 14.1572 14.9359 14.9359C14.1572 15.7147 13.1013 16.1527 12 16.1538ZM17.1923 7.84615C16.9869 7.84615 16.7861 7.78525 16.6154 7.67114C16.4446 7.55703 16.3115 7.39485 16.2329 7.20509C16.1543 7.01534 16.1337 6.80654 16.1738 6.6051C16.2139 6.40366 16.3128 6.21862 16.458 6.07339C16.6032 5.92816 16.7883 5.82925 16.9897 5.78918C17.1912 5.74912 17.4 5.76968 17.5897 5.84828C17.7795 5.92688 17.9416 6.05998 18.0558 6.23075C18.1699 6.40153 18.2308 6.6023 18.2308 6.80769C18.2308 7.08311 18.1214 7.34725 17.9266 7.542C17.7319 7.73674 17.4677 7.84615 17.1923 7.84615ZM14.7692 12C14.7692 12.5477 14.6068 13.0831 14.3025 13.5385C13.9982 13.9939 13.5657 14.3488 13.0597 14.5584C12.5537 14.768 11.9969 14.8229 11.4598 14.716C10.9226 14.6092 10.4291 14.3454 10.0419 13.9581C9.65457 13.5709 9.39083 13.0774 9.28398 12.5402C9.17713 12.0031 9.23197 11.4463 9.44156 10.9403C9.65116 10.4343 10.0061 10.0018 10.4615 9.69747C10.9169 9.39318 11.4523 9.23077 12 9.23077C12.7344 9.23077 13.4388 9.52253 13.9581 10.0419C14.4775 10.5612 14.7692 11.2656 14.7692 12Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog_slider">
+            <div class="container">
+                <div class="sect_title flex">
+                    <h1 class="title">
+                        Benzer İçerikler
+                    </h1>
+                    <div class="right">
+                        <div class="pagination">
+                            <div class="arrow prev_arrow">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M11.692 5.80806C11.9361 6.05214 11.9361 6.44786 11.692 6.69194L8.38398 10L11.692 13.3081C11.9361 13.5521 11.9361 13.9479 11.692 14.1919C11.448 14.436 11.0522 14.436 10.8082 14.1919L6.61621 10L10.8082 5.80806C11.0522 5.56398 11.448 5.56398 11.692 5.80806Z"
+                                        fill="black" />
+                                </svg>
+                            </div>
+                            <div class="arrow next_arrow">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.30796 5.80806C8.06389 6.05214 8.06389 6.44786 8.30796 6.69194L11.616 10L8.30796 13.3081C8.06389 13.5521 8.06389 13.9479 8.30796 14.1919C8.55204 14.436 8.94777 14.436 9.19185 14.1919L13.3838 10L9.19185 5.80806C8.94777 5.56398 8.55204 5.56398 8.30796 5.80806Z"
+                                        fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider blogs_grid products_grid">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="" class="blog_item">
+                                <div class="blog_image">
+                                    <img src="../images/blog2.png" alt="">
+                                </div>
+                                <div class="blog_details">
+                                    <h3>“Telefon Kendi Kendine <br> Kapanıp Açılıyor” Sorunu</h3>
+                                    <p>Lorem ipsum dolor sit amet <br> consectetur. Cras cras ac interdum <br> volutpat.
+                                    </p>
+                                    <div class="bottom">
+                                        <ul>
+                                            <li class="category">Telefon</li>
+                                            <li class="date">16 Mayıs</li>
+                                            <li class="readTime">7 dakika da okunur</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="blog_item">
+                                <div class="blog_image">
+                                    <img src="../images/blog1.png" alt="">
+                                </div>
+                                <div class="blog_details">
+                                    <h3>“Telefon Kendi Kendine <br> Kapanıp Açılıyor” Sorunu</h3>
+                                    <p>Lorem ipsum dolor sit amet <br> consectetur. Cras cras ac interdum <br> volutpat.
+                                    </p>
+                                    <div class="bottom">
+                                        <ul>
+                                            <li class="category">Telefon</li>
+                                            <li class="date">16 Mayıs</li>
+                                            <li class="readTime">7 dakika da okunur</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="blog_item">
+                                <div class="blog_image">
+                                    <img src="../images/blog3.png" alt="">
+                                </div>
+                                <div class="blog_details">
+                                    <h3>“Telefon Kendi Kendine <br> Kapanıp Açılıyor” Sorunu</h3>
+                                    <p>Lorem ipsum dolor sit amet <br> consectetur. Cras cras ac interdum <br> volutpat.
+                                    </p>
+                                    <div class="bottom">
+                                        <ul>
+                                            <li class="category">Telefon</li>
+                                            <li class="date">16 Mayıs</li>
+                                            <li class="readTime">7 dakika da okunur</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="blog_item">
+                                <div class="blog_image">
+                                    <img src="../images/blog1.png" alt="">
+                                </div>
+                                <div class="blog_details">
+                                    <h3>“Telefon Kendi Kendine <br> Kapanıp Açılıyor” Sorunu</h3>
+                                    <p>Lorem ipsum dolor sit amet <br> consectetur. Cras cras ac interdum <br> volutpat.
+                                    </p>
+                                    <div class="bottom">
+                                        <ul>
+                                            <li class="category">Telefon</li>
+                                            <li class="date">16 Mayıs</li>
+                                            <li class="readTime">7 dakika da okunur</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="blog_item">
+                                <div class="blog_image">
+                                    <img src="../images/blog3.png" alt="">
+                                </div>
+                                <div class="blog_details">
+                                    <h3>“Telefon Kendi Kendine <br> Kapanıp Açılıyor” Sorunu</h3>
+                                    <p>Lorem ipsum dolor sit amet <br> consectetur. Cras cras ac interdum <br> volutpat.
+                                    </p>
+                                    <div class="bottom">
+                                        <ul>
+                                            <li class="category">Telefon</li>
+                                            <li class="date">16 Mayıs</li>
+                                            <li class="readTime">7 dakika da okunur</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="used_phone_form" style="margin-bottom: 116px;">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="content">
+                        <h2>2. El telefonunu değerinde
+                            ve anında alıyoruz
+                        </h2>
+                        <p>En iyi fiyat teklifini garantili de alabilirsin.</p>
+                        <form action="">
+                            <div class="form_element">
+                                <div class="c_select">
+                                    <select id="year">
+                                        <option value="hide">Telefon markası seçin</option>
+                                        <option>Lorem ipsum</option>
+                                        <option>Lorem ipsum</option>
+                                        <option>Lorem ipsum</option>
+                                        <option>Lorem ipsum</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form_element">
+                                <div class="c_select">
+                                    <select id="year">
+                                        <option value="hide">Telefon modeli senin..</option>
+                                        <option>Lorem ipsum</option>
+                                        <option>Lorem ipsum</option>
+                                        <option>Lorem ipsum</option>
+                                        <option>Lorem ipsum</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form_element">
+                                <button class="primary_btn">
+                                    <span>İleri</span>
+                                    <div class="arrow">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M8.30796 5.80806C8.06389 6.05214 8.06389 6.44786 8.30796 6.69194L11.616 10L8.30796 13.3081C8.06389 13.5521 8.06389 13.9479 8.30796 14.1919C8.55204 14.436 8.94777 14.436 9.19185 14.1919L13.3838 10L9.19185 5.80806C8.94777 5.56398 8.55204 5.56398 8.30796 5.80806Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="image">
+                        <img src="../images/google-pixel-7.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site_footer">
+        <div class="foot_main">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="subscribe">
+                        <div class="logo">
+                            <img src="../images/logo.svg" alt="">
+                        </div>
+                        <h3>Yeniliklerden Haberdar Ol</h3>
+                        <p>Bültenimize kayıt olarak, telefonlar hakkında indirim haberlerini kaçırmayın!</p>
+                        <div class="sub_form">
+                            <form action="">
+                                <div class="form_wrap">
+                                    <input type="text" placeholder="E-Posta Adresiniz">
+                                    <button type="button" class="primary_btn send_btn">
+                                        <span>Gönder</span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.64637 4.64645C6.45111 4.84171 6.45111 5.15829 6.64637 5.35355L9.29282 8L6.64637 10.6464C6.45111 10.8417 6.45111 11.1583 6.64637 11.3536C6.84163 11.5488 7.15822 11.5488 7.35348 11.3536L10.707 8L7.35348 4.64645C7.15822 4.45118 6.84163 4.45118 6.64637 4.64645Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="main_menu">
+                            <div class="menu">
+                                <h5 class="title">Kurumsal</h5>
+                                <ul>
+                                    <li>
+                                        <a href="">Hakkımızda</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Bize Ulaşın</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Gizlilik Sözleşmesi</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Bilgi Güvenliği Politikamız</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h5 class="title">Müşteri İşlemleri</h5>
+                                <ul>
+                                    <li>
+                                        <a href="">Sipariş Takibi</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Sıkça Sorulan Sorular</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Satış Sözleşmesi</a>
+                                    </li>
+                                    <li>
+                                        <a href="">İade Politikası</a>
+                                    </li>
+                                    <li>
+                                        <a href="">K.V.K.K. Politikası</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <h5 class="title">Cep Telefonu</h5>
+                                <ul>
+                                    <li>
+                                        <a href="">Apple</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Samsung</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Huawei</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Xiaomi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contact_info">
+                            <div class="contact_item">
+                                <h5>İstanbul Ofis</h5>
+                                <p class="text">Nur Yıldız Plaza, 15 Temmuz Mah. Gülbahar Cad. B Blok No:7/21
+                                    Bağcılar/İstanbul</p>
+                            </div>
+                            <div class="contact_item">
+                                <h5>Destek Hattı</h5>
+                                <a href="tel:destek@garantili.com.tr" class="text">0 (212) 485 28 29</a>
+                                <a href="mailto:destek@garantili.com.tr" class="text">destek@garantili.com.tr</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot_bottom">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="payment_methods">
+                        <img src="../images/Master-card.png" alt="" width="32">
+                        <img src="../images/Visa.png" alt="" width="32">
+                        <p>2023 © Garantili Teknoloji İletişim Hizmetleri | Türkiye'nin İlk Cep Telefonu Yenileme
+                            Merkezi</p>
+                    </div>
+                    <div class="social_media">
+                        <a href="">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 6.03015C0 9.01507 2.16 11.4874 5.01 12L5.04544 11.9709C5.04364 11.9705 5.04182 11.9702 5.04001 11.9699V7.71861H3.54001V6.03017H5.04001V4.70353C5.04001 3.19599 6.00002 2.35177 7.38001 2.35177C7.80001 2.35177 8.28001 2.41208 8.70002 2.47238V4.01007H7.92001C7.20001 4.01007 7.02001 4.37187 7.02001 4.85429V6.03017H8.61002L8.34002 7.71861H7.02001V11.9699C7.00174 11.9732 6.98347 11.9764 6.9652 11.9796L6.99 12C9.84 11.4874 12 9.01507 12 6.03015C12 2.71357 9.3 0 6 0C2.7 0 0 2.71357 0 6.03015Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.7715 3.15647C10.7788 3.26496 10.7788 3.37345 10.7788 3.48295C10.7788 6.81924 8.30225 10.667 3.7738 10.667V10.665C2.43608 10.667 1.12614 10.274 0 9.53306C0.194516 9.55706 0.390006 9.56906 0.585984 9.56956C1.69458 9.57056 2.77148 9.18909 3.64363 8.48663C2.59013 8.46613 1.6663 7.76168 1.34357 6.73324C1.71261 6.80624 2.09287 6.79124 2.45509 6.68974C1.30652 6.45176 0.480195 5.41682 0.480195 4.2149V4.1829C0.822425 4.37839 1.20561 4.48688 1.59756 4.49888C0.515783 3.75743 0.182328 2.28152 0.835588 1.12759C2.08556 2.70499 3.9298 3.66393 5.90957 3.76543C5.71115 2.88848 5.98221 1.96954 6.62182 1.35308C7.61341 0.39714 9.17294 0.446137 10.1051 1.46257C10.6564 1.35108 11.1849 1.14359 11.6685 0.849612C11.4847 1.43407 11.1001 1.93054 10.5862 2.24602C11.0742 2.18703 11.551 2.05304 12 1.84855C11.6695 2.35652 11.2531 2.79899 10.7715 3.15647Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.76923 0H3.23077C2.3742 0.000916284 1.55297 0.341594 0.947282 0.947282C0.341594 1.55297 0.000916284 2.3742 0 3.23077V8.76923C0.000916284 9.6258 0.341594 10.447 0.947282 11.0527C1.55297 11.6584 2.3742 11.9991 3.23077 12H8.76923C9.6258 11.9991 10.447 11.6584 11.0527 11.0527C11.6584 10.447 11.9991 9.6258 12 8.76923V3.23077C11.9991 2.3742 11.6584 1.55297 11.0527 0.947282C10.447 0.341594 9.6258 0.000916284 8.76923 0ZM6 8.76923C5.4523 8.76923 4.9169 8.60682 4.4615 8.30253C4.0061 7.99824 3.65116 7.56575 3.44156 7.05974C3.23197 6.55373 3.17713 5.99693 3.28398 5.45975C3.39083 4.92257 3.65457 4.42914 4.04186 4.04186C4.42914 3.65457 4.92257 3.39083 5.45975 3.28398C5.99693 3.17713 6.55373 3.23197 7.05974 3.44156C7.56575 3.65116 7.99824 4.0061 8.30253 4.4615C8.60682 4.9169 8.76923 5.4523 8.76923 6C8.76847 6.73421 8.47647 7.43813 7.9573 7.9573C7.43813 8.47647 6.73421 8.76847 6 8.76923ZM9.46154 3.23077C9.32461 3.23077 9.19076 3.19017 9.07691 3.11409C8.96306 3.03802 8.87433 2.9299 8.82193 2.8034C8.76953 2.67689 8.75582 2.53769 8.78253 2.4034C8.80925 2.2691 8.87518 2.14575 8.972 2.04893C9.06882 1.95211 9.19218 1.88617 9.32648 1.85946C9.46077 1.83274 9.59997 1.84645 9.72647 1.89885C9.85298 1.95125 9.9611 2.03999 10.0372 2.15384C10.1132 2.26769 10.1538 2.40154 10.1538 2.53846C10.1538 2.72207 10.0809 2.89816 9.95107 3.028C9.82124 3.15783 9.64515 3.23077 9.46154 3.23077ZM7.84615 6C7.84615 6.36513 7.73788 6.72207 7.53502 7.02567C7.33216 7.32927 7.04383 7.56589 6.70649 7.70562C6.36915 7.84536 5.99795 7.88192 5.63983 7.81068C5.28171 7.73945 4.95276 7.56362 4.69457 7.30543C4.43638 7.04724 4.26055 6.71829 4.18932 6.36017C4.11808 6.00205 4.15464 5.63085 4.29438 5.29351C4.43411 4.95617 4.67073 4.66784 4.97433 4.46498C5.27793 4.26212 5.63487 4.15385 6 4.15385C6.48963 4.15385 6.95921 4.34835 7.30543 4.69457C7.65165 5.04079 7.84615 5.51037 7.84615 6Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

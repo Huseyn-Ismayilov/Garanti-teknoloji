@@ -156,10 +156,19 @@
         }
         .image {
             width: 100%;
+            img {
+                max-width: 202px;
+            }
         }
         .content {
             width: 100%;
             padding-top: 0;
+            h2 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
+            }
         }
     }
 }
