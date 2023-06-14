@@ -1,6 +1,7 @@
 .site_footer {
     color: black;
     border-top: 1px solid #dddddd;
+    background-color: white;
     overflow: hidden;
     .wrapper {
         flex-wrap: nowrap;
@@ -117,6 +118,44 @@
         }
     }
     .social_media {
+        a {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            border-radius: 12px;
+            &:hover {
+                background-color: rgb(233, 233, 233);
+            }
+        }
+    }
+}
+.footer01{
+    .foot_bottom {
+        border-top: 1px solid #dddddd;
+        padding: 20px 0;
+        .wrapper {
+            justify-content: space-between;
+            align-items: center;
+            gap: 14px;
+        }
+    }
+    .payment_methods {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            color: var(--gray-dark);
+        }
+    }
+    .social_media {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
         a {
             width: 32px;
             height: 32px;

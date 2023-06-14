@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../scss/main.css">
+</head>
+
+<body>
+    <main>
+        <div class="basket_layout">
+            <div class="header01">
+                <div class="container">
+                    <div class="wrapper">
+                        <a href="../../index.html" class="site_logo">
+                            <img src="../images/logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="checkoutProgress">
+                <div class="container">
+                    <div class="wrapper">
+                        <a href="" class="back_btn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.692 5.80806C11.9361 6.05214 11.9361 6.44786 11.692 6.69194L8.38398 10L11.692 13.3081C11.9361 13.5521 11.9361 13.9479 11.692 14.1919C11.448 14.436 11.0522 14.436 10.8082 14.1919L6.61621 10L10.8082 5.80806C11.0522 5.56398 11.448 5.56398 11.692 5.80806Z"
+                                    fill="#959595" />
+                            </svg>
+                        </a>
+                        <ul class="bars">
+                            <li class="active">
+                                <div class="text">Teslimat</div>
+                            </li>
+                            <li><div class="text">2</div></li>
+                            <li><div class="text">3</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="basket_container">
+                <div class="container">
+                    <div class="main_content">
+                        <div class="address_block">
+                            <div class="head">
+                                <div class="block_title">
+                                    Teslimat Adresi
+                                </div>
+                                <button type="button" class="secondary_btn add_address">
+                                    <div class="arrow">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M10.625 5C10.625 4.65482 10.3452 4.375 10 4.375C9.65482 4.375 9.375 4.65482 9.375 5V9.375H5C4.65482 9.375 4.375 9.65482 4.375 10C4.375 10.3452 4.65482 10.625 5 10.625H9.375V15C9.375 15.3452 9.65482 15.625 10 15.625C10.3452 15.625 10.625 15.3452 10.625 15V10.625H15C15.3452 10.625 15.625 10.3452 15.625 10C15.625 9.65482 15.3452 9.375 15 9.375H10.625V5Z"
+                                                fill="black" />
+                                        </svg>
+                                    </div>
+                                    <span>Yeni Adres Ekle</span>
+                                </button>
+                            </div>
+                            <ul class="address_items">
+                                <li class="address_item">
+                                    <div class="top">
+                                        <div class="left">
+                                            <label class="checkbox" for="address">
+                                                <input type="radio" id="address" name="address">
+                                                <div class="inner">
+                                                    <div class="icon">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_184_11395)">
+                                                                <rect x="0.5" y="0.5" width="17" height="17" rx="8.5"
+                                                                    stroke="#959595" />
+                                                                <path class="active"
+                                                                    d="M12.7773 0H5.2316C1.95397 0 0 1.953 0 5.229V12.762C0 16.047 1.95397 18 5.2316 18H12.7683C16.0459 18 18 16.047 18 12.771V5.229C18.009 1.953 16.055 0 12.7773 0ZM13.3087 6.93L8.20308 12.033C8.07701 12.159 7.90593 12.231 7.72583 12.231C7.54575 12.231 7.37467 12.159 7.2486 12.033L4.70034 9.486C4.4392 9.225 4.4392 8.793 4.70034 8.532C4.96146 8.271 5.39367 8.271 5.65481 8.532L7.72583 10.602L12.3541 5.976C12.6152 5.715 13.0474 5.715 13.3087 5.976C13.5698 6.237 13.5698 6.66 13.3087 6.93Z"
+                                                                    fill="black" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_184_11395">
+                                                                    <rect width="18" height="18" rx="9" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                    <span>İş</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="btns">
+                                            <button type="button" class="delete_btn item">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.00016 3.16675C6.00016 2.89061 6.22402 2.66675 6.50016 2.66675H9.50016C9.77631 2.66675 10.0002 2.89061 10.0002 3.16675V4.66675H11.1668H12.6668C12.943 4.66675 13.1668 4.89061 13.1668 5.16675C13.1668 5.44289 12.943 5.66675 12.6668 5.66675H11.6668V12.1667C11.6668 12.4429 11.443 12.6667 11.1668 12.6667H4.83349C4.55735 12.6667 4.33349 12.4429 4.33349 12.1667V5.66675H3.3335C3.05735 5.66675 2.8335 5.44289 2.8335 5.16675C2.8335 4.89061 3.05735 4.66675 3.3335 4.66675H4.83349H6.00016V3.16675ZM6.50016 5.66675H5.33349V11.6667H10.6668V5.66675H9.50016H6.50016ZM9.00016 4.66675H7.00016V3.66675H9.00016V4.66675Z"
+                                                        fill="black" />
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="edit_btn item">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M10.3537 3.31319C10.2599 3.21943 10.1328 3.16675 10.0002 3.16675C9.86755 3.16675 9.74038 3.21943 9.64661 3.3132L3.47994 9.47991C3.38617 9.57368 3.3335 9.70085 3.3335 9.83346V12.1668C3.3335 12.4429 3.55735 12.6668 3.8335 12.6668H6.16683C6.29944 12.6668 6.42662 12.6141 6.52038 12.5203L12.6871 6.35363C12.8823 6.15837 12.8823 5.84179 12.687 5.64653L10.3537 3.31319ZM4.3335 10.0406L10.0002 4.37386L11.6264 6.00008L5.95972 11.6668H4.3335V10.0406ZM8.66683 11.6667C8.39069 11.6667 8.16683 11.8906 8.16683 12.1667C8.16683 12.4429 8.39069 12.6667 8.66683 12.6667H13.3335C13.6096 12.6667 13.8335 12.4429 13.8335 12.1667C13.8335 11.8906 13.6096 11.6667 13.3335 11.6667H8.66683Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="name">Melih Ozdemir</h3>
+                                        <p class="address_text">Namık Kemal Mah. 10. Sokak No: 55 PTT Dağıtım Merkezi
+                                            Avcılar/İSTANBUL</p>
+                                        <div class="number">+90 5** *** ** 44</div>
+                                    </div>
+                                </li>
+                                <li class="address_item">
+                                    <div class="top">
+                                        <div class="left">
+                                            <label class="checkbox" for="address1">
+                                                <input type="radio" id="address1" name="address">
+                                                <div class="inner">
+                                                    <div class="icon">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_184_11395)">
+                                                                <rect x="0.5" y="0.5" width="17" height="17" rx="8.5"
+                                                                    stroke="#959595" />
+                                                                <path class="active"
+                                                                    d="M12.7773 0H5.2316C1.95397 0 0 1.953 0 5.229V12.762C0 16.047 1.95397 18 5.2316 18H12.7683C16.0459 18 18 16.047 18 12.771V5.229C18.009 1.953 16.055 0 12.7773 0ZM13.3087 6.93L8.20308 12.033C8.07701 12.159 7.90593 12.231 7.72583 12.231C7.54575 12.231 7.37467 12.159 7.2486 12.033L4.70034 9.486C4.4392 9.225 4.4392 8.793 4.70034 8.532C4.96146 8.271 5.39367 8.271 5.65481 8.532L7.72583 10.602L12.3541 5.976C12.6152 5.715 13.0474 5.715 13.3087 5.976C13.5698 6.237 13.5698 6.66 13.3087 6.93Z"
+                                                                    fill="black" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_184_11395">
+                                                                    <rect width="18" height="18" rx="9" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                    <span>İş</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="btns">
+                                            <button type="button" class="delete_btn item">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.00016 3.16675C6.00016 2.89061 6.22402 2.66675 6.50016 2.66675H9.50016C9.77631 2.66675 10.0002 2.89061 10.0002 3.16675V4.66675H11.1668H12.6668C12.943 4.66675 13.1668 4.89061 13.1668 5.16675C13.1668 5.44289 12.943 5.66675 12.6668 5.66675H11.6668V12.1667C11.6668 12.4429 11.443 12.6667 11.1668 12.6667H4.83349C4.55735 12.6667 4.33349 12.4429 4.33349 12.1667V5.66675H3.3335C3.05735 5.66675 2.8335 5.44289 2.8335 5.16675C2.8335 4.89061 3.05735 4.66675 3.3335 4.66675H4.83349H6.00016V3.16675ZM6.50016 5.66675H5.33349V11.6667H10.6668V5.66675H9.50016H6.50016ZM9.00016 4.66675H7.00016V3.66675H9.00016V4.66675Z"
+                                                        fill="black" />
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="edit_btn item">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M10.3537 3.31319C10.2599 3.21943 10.1328 3.16675 10.0002 3.16675C9.86755 3.16675 9.74038 3.21943 9.64661 3.3132L3.47994 9.47991C3.38617 9.57368 3.3335 9.70085 3.3335 9.83346V12.1668C3.3335 12.4429 3.55735 12.6668 3.8335 12.6668H6.16683C6.29944 12.6668 6.42662 12.6141 6.52038 12.5203L12.6871 6.35363C12.8823 6.15837 12.8823 5.84179 12.687 5.64653L10.3537 3.31319ZM4.3335 10.0406L10.0002 4.37386L11.6264 6.00008L5.95972 11.6668H4.3335V10.0406ZM8.66683 11.6667C8.39069 11.6667 8.16683 11.8906 8.16683 12.1667C8.16683 12.4429 8.39069 12.6667 8.66683 12.6667H13.3335C13.6096 12.6667 13.8335 12.4429 13.8335 12.1667C13.8335 11.8906 13.6096 11.6667 13.3335 11.6667H8.66683Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="name">Melih Ozdemir</h3>
+                                        <p class="address_text">Namık Kemal Mah. 10. Sokak No: 55 PTT Dağıtım Merkezi
+                                            Avcılar/İSTANBUL</p>
+                                        <div class="number">+90 5** *** ** 44</div>
+                                    </div>
+                                </li>
+                                <li class="address_item">
+                                    <div class="top">
+                                        <div class="left">
+                                            <label class="checkbox" for="address2">
+                                                <input type="radio" id="address2" name="address">
+                                                <div class="inner">
+                                                    <div class="icon">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_184_11395)">
+                                                                <rect x="0.5" y="0.5" width="17" height="17" rx="8.5"
+                                                                    stroke="#959595" />
+                                                                <path class="active"
+                                                                    d="M12.7773 0H5.2316C1.95397 0 0 1.953 0 5.229V12.762C0 16.047 1.95397 18 5.2316 18H12.7683C16.0459 18 18 16.047 18 12.771V5.229C18.009 1.953 16.055 0 12.7773 0ZM13.3087 6.93L8.20308 12.033C8.07701 12.159 7.90593 12.231 7.72583 12.231C7.54575 12.231 7.37467 12.159 7.2486 12.033L4.70034 9.486C4.4392 9.225 4.4392 8.793 4.70034 8.532C4.96146 8.271 5.39367 8.271 5.65481 8.532L7.72583 10.602L12.3541 5.976C12.6152 5.715 13.0474 5.715 13.3087 5.976C13.5698 6.237 13.5698 6.66 13.3087 6.93Z"
+                                                                    fill="black" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_184_11395">
+                                                                    <rect width="18" height="18" rx="9" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                    <span>İş</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="btns">
+                                            <button type="button" class="delete_btn item">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.00016 3.16675C6.00016 2.89061 6.22402 2.66675 6.50016 2.66675H9.50016C9.77631 2.66675 10.0002 2.89061 10.0002 3.16675V4.66675H11.1668H12.6668C12.943 4.66675 13.1668 4.89061 13.1668 5.16675C13.1668 5.44289 12.943 5.66675 12.6668 5.66675H11.6668V12.1667C11.6668 12.4429 11.443 12.6667 11.1668 12.6667H4.83349C4.55735 12.6667 4.33349 12.4429 4.33349 12.1667V5.66675H3.3335C3.05735 5.66675 2.8335 5.44289 2.8335 5.16675C2.8335 4.89061 3.05735 4.66675 3.3335 4.66675H4.83349H6.00016V3.16675ZM6.50016 5.66675H5.33349V11.6667H10.6668V5.66675H9.50016H6.50016ZM9.00016 4.66675H7.00016V3.66675H9.00016V4.66675Z"
+                                                        fill="black" />
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="edit_btn item">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M10.3537 3.31319C10.2599 3.21943 10.1328 3.16675 10.0002 3.16675C9.86755 3.16675 9.74038 3.21943 9.64661 3.3132L3.47994 9.47991C3.38617 9.57368 3.3335 9.70085 3.3335 9.83346V12.1668C3.3335 12.4429 3.55735 12.6668 3.8335 12.6668H6.16683C6.29944 12.6668 6.42662 12.6141 6.52038 12.5203L12.6871 6.35363C12.8823 6.15837 12.8823 5.84179 12.687 5.64653L10.3537 3.31319ZM4.3335 10.0406L10.0002 4.37386L11.6264 6.00008L5.95972 11.6668H4.3335V10.0406ZM8.66683 11.6667C8.39069 11.6667 8.16683 11.8906 8.16683 12.1667C8.16683 12.4429 8.39069 12.6667 8.66683 12.6667H13.3335C13.6096 12.6667 13.8335 12.4429 13.8335 12.1667C13.8335 11.8906 13.6096 11.6667 13.3335 11.6667H8.66683Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="name">Melih Ozdemir</h3>
+                                        <p class="address_text">Namık Kemal Mah. 10. Sokak No: 55 PTT Dağıtım Merkezi
+                                            Avcılar/İSTANBUL</p>
+                                        <div class="number">+90 5** *** ** 44</div>
+                                    </div>
+                                </li>
+                                <li class="address_item">
+                                    <div class="top">
+                                        <div class="left">
+                                            <label class="checkbox" for="address3">
+                                                <input type="radio" id="address3" name="address">
+                                                <div class="inner">
+                                                    <div class="icon">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_184_11395)">
+                                                                <rect x="0.5" y="0.5" width="17" height="17" rx="8.5"
+                                                                    stroke="#959595" />
+                                                                <path class="active"
+                                                                    d="M12.7773 0H5.2316C1.95397 0 0 1.953 0 5.229V12.762C0 16.047 1.95397 18 5.2316 18H12.7683C16.0459 18 18 16.047 18 12.771V5.229C18.009 1.953 16.055 0 12.7773 0ZM13.3087 6.93L8.20308 12.033C8.07701 12.159 7.90593 12.231 7.72583 12.231C7.54575 12.231 7.37467 12.159 7.2486 12.033L4.70034 9.486C4.4392 9.225 4.4392 8.793 4.70034 8.532C4.96146 8.271 5.39367 8.271 5.65481 8.532L7.72583 10.602L12.3541 5.976C12.6152 5.715 13.0474 5.715 13.3087 5.976C13.5698 6.237 13.5698 6.66 13.3087 6.93Z"
+                                                                    fill="black" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_184_11395">
+                                                                    <rect width="18" height="18" rx="9" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                    <span>İş</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="btns">
+                                            <button type="button" class="delete_btn item">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.00016 3.16675C6.00016 2.89061 6.22402 2.66675 6.50016 2.66675H9.50016C9.77631 2.66675 10.0002 2.89061 10.0002 3.16675V4.66675H11.1668H12.6668C12.943 4.66675 13.1668 4.89061 13.1668 5.16675C13.1668 5.44289 12.943 5.66675 12.6668 5.66675H11.6668V12.1667C11.6668 12.4429 11.443 12.6667 11.1668 12.6667H4.83349C4.55735 12.6667 4.33349 12.4429 4.33349 12.1667V5.66675H3.3335C3.05735 5.66675 2.8335 5.44289 2.8335 5.16675C2.8335 4.89061 3.05735 4.66675 3.3335 4.66675H4.83349H6.00016V3.16675ZM6.50016 5.66675H5.33349V11.6667H10.6668V5.66675H9.50016H6.50016ZM9.00016 4.66675H7.00016V3.66675H9.00016V4.66675Z"
+                                                        fill="black" />
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="edit_btn item">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M10.3537 3.31319C10.2599 3.21943 10.1328 3.16675 10.0002 3.16675C9.86755 3.16675 9.74038 3.21943 9.64661 3.3132L3.47994 9.47991C3.38617 9.57368 3.3335 9.70085 3.3335 9.83346V12.1668C3.3335 12.4429 3.55735 12.6668 3.8335 12.6668H6.16683C6.29944 12.6668 6.42662 12.6141 6.52038 12.5203L12.6871 6.35363C12.8823 6.15837 12.8823 5.84179 12.687 5.64653L10.3537 3.31319ZM4.3335 10.0406L10.0002 4.37386L11.6264 6.00008L5.95972 11.6668H4.3335V10.0406ZM8.66683 11.6667C8.39069 11.6667 8.16683 11.8906 8.16683 12.1667C8.16683 12.4429 8.39069 12.6667 8.66683 12.6667H13.3335C13.6096 12.6667 13.8335 12.4429 13.8335 12.1667C13.8335 11.8906 13.6096 11.6667 13.3335 11.6667H8.66683Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="name">Melih Ozdemir</h3>
+                                        <p class="address_text">Namık Kemal Mah. 10. Sokak No: 55 PTT Dağıtım Merkezi
+                                            Avcılar/İSTANBUL</p>
+                                        <div class="number">+90 5** *** ** 44</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <label class="checkbox" for="sameAddress">
+                                <input type="checkbox" id="sameAddress" checked>
+                                <div class="inner">
+                                    <div class="icon">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.4583 17.9167H6.45833C1.93333 17.9167 0 15.9833 0 11.4583V6.45833C0 1.93333 1.93333 0 6.45833 0H11.4583C15.9833 0 17.9167 1.93333 17.9167 6.45833V11.4583C17.9167 15.9833 15.9833 17.9167 11.4583 17.9167ZM6.45833 1.25C2.61667 1.25 1.25 2.61667 1.25 6.45833V11.4583C1.25 15.3 2.61667 16.6667 6.45833 16.6667H11.4583C15.3 16.6667 16.6667 15.3 16.6667 11.4583V6.45833C16.6667 2.61667 15.3 1.25 11.4583 1.25H6.45833Z"
+                                                fill="#959595"></path>
+                                            <path class="active"
+                                                d="M12.5177 0.5H5.39116C2.29561 0.5 0.450195 2.3445 0.450195 5.4385V12.553C0.450195 15.6555 2.29561 17.5 5.39116 17.5H12.5092C15.6047 17.5 17.4502 15.6555 17.4502 12.5615V5.4385C17.4587 2.3445 15.6133 0.5 12.5177 0.5ZM13.0195 7.045L8.19756 11.8645C8.0785 11.9835 7.91692 12.0515 7.74683 12.0515C7.57675 12.0515 7.41517 11.9835 7.29611 11.8645L4.88941 9.459C4.64278 9.2125 4.64278 8.8045 4.88941 8.558C5.13603 8.3115 5.54423 8.3115 5.79086 8.558L7.74683 10.513L12.118 6.144C12.3646 5.8975 12.7728 5.8975 13.0195 6.144C13.2661 6.3905 13.2661 6.79 13.0195 7.045Z"
+                                                fill="black"></path>
+                                        </svg>
+                                    </div>
+                                    <span>Fatura adresim ile aynı</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="cargo_block">
+                            <div class="head">
+                                <div class="block_title">
+                                    Kargo Firması
+                                </div>
+                            </div>
+                            <ul class="address_items cargo_items">
+                                <li class="address_item cargo_item">
+                                    <div class="top">
+                                        <div class="left">
+                                            <label class="checkbox" for="cargo">
+                                                <input type="radio" id="cargo" name="cargo">
+                                                <div class="inner">
+                                                    <div class="icon">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_184_11395)">
+                                                                <rect x="0.5" y="0.5" width="17" height="17" rx="8.5"
+                                                                    stroke="#959595" />
+                                                                <path class="active"
+                                                                    d="M12.7773 0H5.2316C1.95397 0 0 1.953 0 5.229V12.762C0 16.047 1.95397 18 5.2316 18H12.7683C16.0459 18 18 16.047 18 12.771V5.229C18.009 1.953 16.055 0 12.7773 0ZM13.3087 6.93L8.20308 12.033C8.07701 12.159 7.90593 12.231 7.72583 12.231C7.54575 12.231 7.37467 12.159 7.2486 12.033L4.70034 9.486C4.4392 9.225 4.4392 8.793 4.70034 8.532C4.96146 8.271 5.39367 8.271 5.65481 8.532L7.72583 10.602L12.3541 5.976C12.6152 5.715 13.0474 5.715 13.3087 5.976C13.5698 6.237 13.5698 6.66 13.3087 6.93Z"
+                                                                    fill="black" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_184_11395">
+                                                                    <rect width="18" height="18" rx="9" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                    <span>Hızlı Teslimat</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="right">
+                                            <span class="day">1 Gün</span>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <p class="address_text">Saat 14:00'e kadar verilen hızlı teslimat siparişleriniz
+                                            aynı gün adresinize teslim edilir. Aynı gün 14:00-23:59 arası verilen hızlı
+                                            teslimat siparişleriniz ise ertesi gün adresinize teslim edilecektir.</p>
+                                        <div class="price">+15.00 TL</div>
+                                    </div>
+                                </li>
+                                <li class="address_item cargo_item">
+                                    <div class="top">
+                                        <div class="left">
+                                            <label class="checkbox" for="cargo1">
+                                                <input type="radio" id="cargo1" name="cargo">
+                                                <div class="inner">
+                                                    <div class="icon">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_184_11395)">
+                                                                <rect x="0.5" y="0.5" width="17" height="17" rx="8.5"
+                                                                    stroke="#959595" />
+                                                                <path class="active"
+                                                                    d="M12.7773 0H5.2316C1.95397 0 0 1.953 0 5.229V12.762C0 16.047 1.95397 18 5.2316 18H12.7683C16.0459 18 18 16.047 18 12.771V5.229C18.009 1.953 16.055 0 12.7773 0ZM13.3087 6.93L8.20308 12.033C8.07701 12.159 7.90593 12.231 7.72583 12.231C7.54575 12.231 7.37467 12.159 7.2486 12.033L4.70034 9.486C4.4392 9.225 4.4392 8.793 4.70034 8.532C4.96146 8.271 5.39367 8.271 5.65481 8.532L7.72583 10.602L12.3541 5.976C12.6152 5.715 13.0474 5.715 13.3087 5.976C13.5698 6.237 13.5698 6.66 13.3087 6.93Z"
+                                                                    fill="black" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_184_11395">
+                                                                    <rect width="18" height="18" rx="9" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                    <span>Hızlı Teslimat</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="right">
+                                            <span class="day">4 Gün</span>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <p class="address_text">Yurtiçi kargo kullanarak bulunduğunuz konuma gelecek tüm
+                                            kargolar ücretsiz teslim edilir.</p>
+                                        <div class="price">+15.00 TL</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="summary block">
+                            <h2 class="block_title">
+                                Özet
+                            </h2>
+                            <ul class="total sum_item">
+                                <li class="subTotal">
+                                    <span>Ara Toplam</span>
+                                    <p>44.123,00 TL</p>
+                                </li>
+                                <li class="cargo">
+                                    <span>Kargo</span>
+                                    <p>7 TL</p>
+                                </li>
+                                <li class="discount">
+                                    <span>Ürüne %20 İndirim</span>
+                                    <p>-564 TL</p>
+                                </li>
+                            </ul>
+                            <div class="totalPrice sum_item">
+                                <span>Ödenecek Tutar</span>
+                                <h2>43.532,00 TL</h2>
+                            </div>
+                            <button type="button" class="next_btn secondary_btn">
+                                <span>Devam Et</span>
+                                <div class="arrow">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.30796 5.80806C8.06389 6.05214 8.06389 6.44786 8.30796 6.69194L11.616 10L8.30796 13.3081C8.06389 13.5521 8.06389 13.9479 8.30796 14.1919C8.55204 14.436 8.94777 14.436 9.19185 14.1919L13.3838 10L9.19185 5.80806C8.94777 5.56398 8.55204 5.56398 8.30796 5.80806Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer01">
+                <div class="foot_bottom">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="payment_methods">
+                                <img src="../images/Master-card.png" alt="" width="32">
+                                <img src="../images/Visa.png" alt="" width="32">
+                                <p>2023 © Garantili Teknoloji İletişim Hizmetleri | Türkiye'nin İlk Cep Telefonu
+                                    Yenileme
+                                    Merkezi</p>
+                            </div>
+                            <div class="social_media">
+                                <a href="">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 6.03015C0 9.01507 2.16 11.4874 5.01 12L5.04544 11.9709C5.04364 11.9705 5.04182 11.9702 5.04001 11.9699V7.71861H3.54001V6.03017H5.04001V4.70353C5.04001 3.19599 6.00002 2.35177 7.38001 2.35177C7.80001 2.35177 8.28001 2.41208 8.70002 2.47238V4.01007H7.92001C7.20001 4.01007 7.02001 4.37187 7.02001 4.85429V6.03017H8.61002L8.34002 7.71861H7.02001V11.9699C7.00174 11.9732 6.98347 11.9764 6.9652 11.9796L6.99 12C9.84 11.4874 12 9.01507 12 6.03015C12 2.71357 9.3 0 6 0C2.7 0 0 2.71357 0 6.03015Z"
+                                            fill="black" />
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.7715 3.15647C10.7788 3.26496 10.7788 3.37345 10.7788 3.48295C10.7788 6.81924 8.30225 10.667 3.7738 10.667V10.665C2.43608 10.667 1.12614 10.274 0 9.53306C0.194516 9.55706 0.390006 9.56906 0.585984 9.56956C1.69458 9.57056 2.77148 9.18909 3.64363 8.48663C2.59013 8.46613 1.6663 7.76168 1.34357 6.73324C1.71261 6.80624 2.09287 6.79124 2.45509 6.68974C1.30652 6.45176 0.480195 5.41682 0.480195 4.2149V4.1829C0.822425 4.37839 1.20561 4.48688 1.59756 4.49888C0.515783 3.75743 0.182328 2.28152 0.835588 1.12759C2.08556 2.70499 3.9298 3.66393 5.90957 3.76543C5.71115 2.88848 5.98221 1.96954 6.62182 1.35308C7.61341 0.39714 9.17294 0.446137 10.1051 1.46257C10.6564 1.35108 11.1849 1.14359 11.6685 0.849612C11.4847 1.43407 11.1001 1.93054 10.5862 2.24602C11.0742 2.18703 11.551 2.05304 12 1.84855C11.6695 2.35652 11.2531 2.79899 10.7715 3.15647Z"
+                                            fill="black" />
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.76923 0H3.23077C2.3742 0.000916284 1.55297 0.341594 0.947282 0.947282C0.341594 1.55297 0.000916284 2.3742 0 3.23077V8.76923C0.000916284 9.6258 0.341594 10.447 0.947282 11.0527C1.55297 11.6584 2.3742 11.9991 3.23077 12H8.76923C9.6258 11.9991 10.447 11.6584 11.0527 11.0527C11.6584 10.447 11.9991 9.6258 12 8.76923V3.23077C11.9991 2.3742 11.6584 1.55297 11.0527 0.947282C10.447 0.341594 9.6258 0.000916284 8.76923 0ZM6 8.76923C5.4523 8.76923 4.9169 8.60682 4.4615 8.30253C4.0061 7.99824 3.65116 7.56575 3.44156 7.05974C3.23197 6.55373 3.17713 5.99693 3.28398 5.45975C3.39083 4.92257 3.65457 4.42914 4.04186 4.04186C4.42914 3.65457 4.92257 3.39083 5.45975 3.28398C5.99693 3.17713 6.55373 3.23197 7.05974 3.44156C7.56575 3.65116 7.99824 4.0061 8.30253 4.4615C8.60682 4.9169 8.76923 5.4523 8.76923 6C8.76847 6.73421 8.47647 7.43813 7.9573 7.9573C7.43813 8.47647 6.73421 8.76847 6 8.76923ZM9.46154 3.23077C9.32461 3.23077 9.19076 3.19017 9.07691 3.11409C8.96306 3.03802 8.87433 2.9299 8.82193 2.8034C8.76953 2.67689 8.75582 2.53769 8.78253 2.4034C8.80925 2.2691 8.87518 2.14575 8.972 2.04893C9.06882 1.95211 9.19218 1.88617 9.32648 1.85946C9.46077 1.83274 9.59997 1.84645 9.72647 1.89885C9.85298 1.95125 9.9611 2.03999 10.0372 2.15384C10.1132 2.26769 10.1538 2.40154 10.1538 2.53846C10.1538 2.72207 10.0809 2.89816 9.95107 3.028C9.82124 3.15783 9.64515 3.23077 9.46154 3.23077ZM7.84615 6C7.84615 6.36513 7.73788 6.72207 7.53502 7.02567C7.33216 7.32927 7.04383 7.56589 6.70649 7.70562C6.36915 7.84536 5.99795 7.88192 5.63983 7.81068C5.28171 7.73945 4.95276 7.56362 4.69457 7.30543C4.43638 7.04724 4.26055 6.71829 4.18932 6.36017C4.11808 6.00205 4.15464 5.63085 4.29438 5.29351C4.43411 4.95617 4.67073 4.66784 4.97433 4.46498C5.27793 4.26212 5.63487 4.15385 6 4.15385C6.48963 4.15385 6.95921 4.34835 7.30543 4.69457C7.65165 5.04079 7.84615 5.51037 7.84615 6Z"
+                                            fill="black" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
